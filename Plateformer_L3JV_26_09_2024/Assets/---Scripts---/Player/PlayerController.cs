@@ -54,6 +54,7 @@ public class PlayerController : MonoBehaviour
     }
     private void ApplyMovements()
     {
+        
         _rigidbody.AddForce(_inputs * _speed, ForceMode2D.Force);
     }
 }

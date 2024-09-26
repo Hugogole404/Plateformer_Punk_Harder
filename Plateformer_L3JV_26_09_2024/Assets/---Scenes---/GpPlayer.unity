@@ -363,6 +363,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 178c31bdd8840ce44a60ce48d3011308, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _thisGO: {fileID: 2102305189}
 --- !u!1 &1207337966
 GameObject:
   m_ObjectHideFlags: 0
@@ -597,6 +598,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6641859784767030291, guid: 19a8f7c0e86ebe945af66a59bf092993, type: 3}
   m_PrefabInstance: {fileID: 1557776161}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2102305189 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4796427544019758951, guid: 19a8f7c0e86ebe945af66a59bf092993, type: 3}
+  m_PrefabInstance: {fileID: 1557776161}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &4710497442974377027
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -662,6 +668,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2201385154641240266, guid: 04789cc36cb31a54898f4474c56c8bcf, type: 3}
+      propertyPath: m_AngularDrag
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2376505291958797742, guid: 04789cc36cb31a54898f4474c56c8bcf, type: 3}
       propertyPath: _spawnPoint
       value: 
