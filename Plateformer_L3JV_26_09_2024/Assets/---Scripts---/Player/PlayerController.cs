@@ -9,8 +9,8 @@ public class PlayerController : MonoBehaviour
 {
     [Header("Movements")]
     [SerializeField] private float _speed;
+    [SerializeField] private Rigidbody2D _rigidbody;
     [Header("Jumps")]
-    [SerializeField] private KeyCode _keyJump;
     [SerializeField] private float _jumpForce;
     [SerializeField] private float _numberOfJumps;
     [SerializeField] private float _minTimerBetweenJumps;
@@ -21,8 +21,9 @@ public class PlayerController : MonoBehaviour
 
     private float _gravity = -9.81f;
     Vector2 _inputs;
-    bool _inputJump;
     Vector2 _direction = Vector2.zero;
+    bool _inputJump;
+    bool _isGrounded;
 
     private void Start()
     {
@@ -30,7 +31,7 @@ public class PlayerController : MonoBehaviour
     }
     private void Update()
     {
-
+        Debug.Log(_inputs);
     }
 
     public void TeleportPlayerToSpawnPoint()
@@ -42,11 +43,16 @@ public class PlayerController : MonoBehaviour
         _inputs = context.ReadValue<Vector2>();
         _direction = new Vector3(_inputs.x, _inputs.y);
     }
+    public void Jump(InputAction.CallbackContext context)
+    {
+        if (!context.performed) return;
+        _rigidbody.AddForce(new Vector2(0, _jumpForce), ForceMode2D.Impulse);
+    }
     private void Movements()
     {
-        _inputs.x = Input.GetAxisRaw("Horizontal");
-        _inputs.y = Input.GetAxisRaw("Vertical");
+        //_inputs.x = Input.GetAxisRaw("Horizontal");
+        //_inputs.y = Input.GetAxisRaw("Vertical");
 
-        _inputJump = Input.GetKey(KeyCode.Space);
+        //_inputJump = Input.GetKey(KeyCode.Space);
     }
 }
