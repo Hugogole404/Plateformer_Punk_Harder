@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Bumper : MonoBehaviour
+public class Bumpers : MonoBehaviour
 {
     float _distance;
     float _time;

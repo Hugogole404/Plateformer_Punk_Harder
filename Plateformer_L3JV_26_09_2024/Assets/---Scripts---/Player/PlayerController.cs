@@ -20,10 +20,10 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float _gravityMultiplier;
 
     private float _gravity = -9.81f;
-    Vector2 _inputs;
-    Vector2 _direction = Vector2.zero;
-    bool _inputJump;
-    bool _isGrounded;
+    private Vector2 _inputs;
+    private Vector2 _direction = Vector2.zero;
+    private bool _inputJump;
+    private bool _isGrounded;
 
     private void Start()
     {
@@ -33,6 +33,10 @@ public class PlayerController : MonoBehaviour
     {
         Debug.Log(_inputs);
     }
+    private void FixedUpdate()
+    {
+        ApplyMovements();
+    }
 
     public void TeleportPlayerToSpawnPoint()
     {
@@ -41,18 +45,15 @@ public class PlayerController : MonoBehaviour
     public void Move(InputAction.CallbackContext context)
     {
         _inputs = context.ReadValue<Vector2>();
-        _direction = new Vector3(_inputs.x, _inputs.y);
+        //_direction = new Vector3(_inputs.x, _inputs.y);
     }
     public void Jump(InputAction.CallbackContext context)
     {
         if (!context.performed) return;
         _rigidbody.AddForce(new Vector2(0, _jumpForce), ForceMode2D.Impulse);
     }
-    private void Movements()
+    private void ApplyMovements()
     {
-        //_inputs.x = Input.GetAxisRaw("Horizontal");
-        //_inputs.y = Input.GetAxisRaw("Vertical");
-
-        //_inputJump = Input.GetKey(KeyCode.Space);
+        _rigidbody.AddForce(_inputs * _speed, ForceMode2D.Force);
     }
 }
