@@ -44,10 +44,15 @@ public class PlayerController : MonoBehaviour
 
     public void TeleportPlayerToSpawnPoint()
     {
-        transform.position = _spawnPoint.transform.position;
+        if (_spawnPoint != null)
+            transform.position = _spawnPoint.transform.position;
     }
     public void Move(InputAction.CallbackContext context)
     {
+        if (context.canceled)
+        {
+            //_rigidbody.velocity
+        }
         _inputs = context.ReadValue<Vector2>();
     }
     public void Jump(InputAction.CallbackContext context)
