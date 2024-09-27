@@ -13,8 +13,10 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private Rigidbody2D _rigidbody;
     [Header("Jumps")]
     [SerializeField] private float _jumpForce;
-    [SerializeField] private float _numberOfJumps;
+    [SerializeField] private int _maxNumbOFJump;
+    private float _currentNumberOfJumps;
     [SerializeField] private float _minTimerBetweenJumps;
+    [SerializeField] private LayerMask _layerMask;
     [Header("Spawn Point")]
     [SerializeField] private GameObject _spawnPoint;
     [Header("Gravity")]
@@ -22,11 +24,10 @@ public class PlayerController : MonoBehaviour
 
     private float _gravity = -9.81f;
     private float _currentTimerBetweenJumps;
-    private int _currentNumbOfJumps;
     private Vector2 _inputs;
     private Vector2 _direction = Vector2.zero;
     private bool _canJump;
-    private bool _isGrounded;
+    [HideInInspector] public bool IsGrounded;
 
     private void Start()
     {
@@ -51,7 +52,7 @@ public class PlayerController : MonoBehaviour
     {
         if (context.canceled)
         {
-            //_rigidbody.velocity
+            //_rigidbody.velocity /= 2;
         }
         _inputs = context.ReadValue<Vector2>();
     }
@@ -61,21 +62,28 @@ public class PlayerController : MonoBehaviour
         CheckJumpConditions();
         if (_canJump)
         {
+            _rigidbody.AddForce(new Vector2(0, _jumpForce), ForceMode2D.Impulse);
+            _currentNumberOfJumps += 1;
         }
-        _rigidbody.AddForce(new Vector2(0, _jumpForce), ForceMode2D.Impulse);
     }
     private void ApplyMovements()
     {
         _rigidbody.AddForce(new Vector2(0, 1) * _gravity * _gravityMultiplier, ForceMode2D.Force);
         _rigidbody.AddForce(_inputs * _speed, ForceMode2D.Force);
     }
-    //private void CheckIsGrounded()
-    //{
-    //    _currentNumbOfJumps = 0;
-    //}
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (((1 << collision.gameObject.layer) & _layerMask) != 0)
+        {
+            IsGrounded = true;
+            _currentNumberOfJumps = 0;
+            CheckJumpConditions();
+        }
+    }
     private void CheckJumpConditions()
     {
-        if (_minTimerBetweenJumps <= _currentTimerBetweenJumps && _numberOfJumps > _currentTimerBetweenJumps)
+        if (_minTimerBetweenJumps <= _currentTimerBetweenJumps && _currentNumberOfJumps < _maxNumbOFJump && IsGrounded)
         {
             _currentTimerBetweenJumps = 0;
             _canJump = true;
