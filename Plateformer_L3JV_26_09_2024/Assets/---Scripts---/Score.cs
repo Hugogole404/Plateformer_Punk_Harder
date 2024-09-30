@@ -6,10 +6,10 @@ using TMPro;
 
 public class Score : MonoBehaviour
 {
-    [SerializeField] int _actualScore;
     [SerializeField] TextMeshProUGUI _textScore;
     [Header("Bumpers")]
-    private int _scoreGivenBumpers;
+    [SerializeField] private int _scoreGivenBumpers;
+    private int _actualScore;
 
     public void AddScoreBumpers()
     {
