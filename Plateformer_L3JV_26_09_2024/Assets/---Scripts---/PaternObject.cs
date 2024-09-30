@@ -2,8 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlatformMovement : MonoBehaviour
+public class PaternObject : MonoBehaviour
 {
+    [Header("Movement")]
     [SerializeField] float _distanceX;
     [SerializeField] float _distanceY;
     [SerializeField] float _AnimationTime;
@@ -14,12 +15,12 @@ public class PlatformMovement : MonoBehaviour
     Vector2 _positionInitial;
     
 
-    // Start is called before the first frame update
     void Start()
     {
         if ((_distanceX == 0f && _distanceY == 0f) || _AnimationTime == 0)
         {
             Destroy(this);
+            return;
         }
 
         _positionInitial = transform.position;

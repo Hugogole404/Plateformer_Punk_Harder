@@ -1,20 +1,20 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Splines;
 
 public class CameraScript : MonoBehaviour
 {
-    public float _speed = 1.0f; 
-
-    // Start is called before the first frame update
+    [SerializeField] float _acceleration;
+    SplineAnimate _splineAnimate;
+    
     void Start()
     {
-        
+        _splineAnimate = GetComponent<SplineAnimate>();
     }
-
-    // Update is called once per frame
+    
     void Update()
     {
-        transform.position += new Vector3(_speed * Time.deltaTime, 0);
+        _splineAnimate.MaxSpeed += _acceleration * Time.deltaTime;
     }
 }

@@ -15,11 +15,6 @@ public class Flipper : MonoBehaviour
     [SerializeField] float _rotationZStart;
     [SerializeField] float _forceX;
 
-    void Start()
-    {
-        print(_rotationZStart);
-    }
-
     void OnTriggerEnter2D(Collider2D collision)
     {
         _other = collision.gameObject;
