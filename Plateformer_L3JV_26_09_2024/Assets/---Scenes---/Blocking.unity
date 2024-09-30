@@ -142,7 +142,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4796427544019758951, guid: 19a8f7c0e86ebe945af66a59bf092993, type: 3}
       propertyPath: m_Name
-      value: Bumper
+      value: Bumper_Special_Block
       objectReference: {fileID: 0}
     - target: {fileID: 6641859784767030291, guid: 19a8f7c0e86ebe945af66a59bf092993, type: 3}
       propertyPath: m_LocalScale.x
@@ -702,7 +702,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -10}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1920, y: 1080, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -777,11 +777,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9063308873246356645, guid: 04789cc36cb31a54898f4474c56c8bcf, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -4.0222545
+      value: -4.726
       objectReference: {fileID: 0}
     - target: {fileID: 9063308873246356645, guid: 04789cc36cb31a54898f4474c56c8bcf, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.473647
+      value: -0.91
       objectReference: {fileID: 0}
     - target: {fileID: 9063308873246356645, guid: 04789cc36cb31a54898f4474c56c8bcf, type: 3}
       propertyPath: m_LocalPosition.z
