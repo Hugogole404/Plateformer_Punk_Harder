@@ -4,19 +4,14 @@ using UnityEngine;
 
 public class DeathZone : MonoBehaviour
 {
-    Camera mainCamera;
-
-    private void Start()
-    {
-        mainCamera = Camera.main;
-    }
+    [SerializeField] Camera _mainCamera;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if(collision.GetComponent<PlayerController>() != null)
         {
             collision.GetComponent<PlayerController>().TeleportPlayerToSpawnPoint();
-            mainCamera.GetComponent<CameraScript>().RestartCamera();
+            _mainCamera.GetComponent<CameraScript>().RestartCamera();
         }
     }
 }

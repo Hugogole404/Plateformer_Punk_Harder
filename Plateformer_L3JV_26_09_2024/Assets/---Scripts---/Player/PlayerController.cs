@@ -46,7 +46,10 @@ public class PlayerController : MonoBehaviour
     public void TeleportPlayerToSpawnPoint()
     {
         if (_spawnPoint != null)
+        {
             transform.position = _spawnPoint.transform.position;
+            _rigidbody.velocity = new Vector3(0, 0, 0);
+        }
     }
     public void Move(InputAction.CallbackContext context)
     {

@@ -1,0 +1,37 @@
+using System.Collections;
+using System.Collections.Generic;
+using Unity.VisualScripting;
+using UnityEngine;
+
+public class CameraIntro : MonoBehaviour
+{
+    float _Ypos = 0;
+    [SerializeField] float _speed;
+    [SerializeField] float _endY;
+    [SerializeField] GameObject _mainCamera;
+
+    void Start()
+    {
+        _endY = -22.7f;/*Camera.main.transform.position.y;
+        Camera.main.enabled = false;
+        print(_endY);*/
+    }
+
+    void Update()
+    {
+        if (_endY > _Ypos) 
+        {
+            _mainCamera.SetActive(true);
+            Destroy(gameObject);
+            return;
+        }
+
+        if (gameObject.GetComponent<Camera>().enabled)
+        {
+            gameObject.GetComponent<Camera>().enabled = true;
+        }
+
+        _Ypos -= _speed * Time.deltaTime;
+        gameObject.transform.position = new Vector3(0, _Ypos, 0);
+    }
+}
