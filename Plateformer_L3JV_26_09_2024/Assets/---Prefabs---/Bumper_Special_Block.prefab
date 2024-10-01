@@ -155,4 +155,4 @@ MonoBehaviour:
   _maxTimerBetweenGetScore: 0
   _sound: {fileID: 0}
   _spriteWhenTouched: {fileID: 21300000, guid: 03b76d4754175d24092b797ed1b463eb, type: 3}
-  _maxTimerChangeSprite: 2
+  _maxTimerChangeSprite: 0.2

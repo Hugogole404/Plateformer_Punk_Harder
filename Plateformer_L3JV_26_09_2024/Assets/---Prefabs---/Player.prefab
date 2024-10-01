@@ -196,7 +196,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _speed: 6
   _rigidbody: {fileID: 2201385154641240266}
-  _jumpForce: 6.2
+  _jumpForce: 7
   _maxNumbOFJump: 2
   _minTimerBetweenJumps: 0
   _layerMask:
