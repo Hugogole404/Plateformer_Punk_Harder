@@ -1,25 +1,37 @@
-using System.Collections;
-using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
 using DG.Tweening;
 
 public class Bumper : MonoBehaviour
 {
     [SerializeField] GameObject _thisGO;
+    [Header("Score")]
     [SerializeField] Score _score;
-    [SerializeField] AudioClip _sound;
     [SerializeField] float _maxTimerBetweenGetScore;
-    private float _currentTimerBetweenGetScore;
-    private bool _canTimer;
+    [Header("Sounds")]
+    [SerializeField] AudioClip _sound;
+    [Header("Sprite changes")]
+    [SerializeField] Sprite _spriteWhenTouched;
+    [SerializeField] float _maxTimerChangeSprite;
 
+    private float _currentTimerBetweenGetScore;
+    private float _currentTimerChangeSprite;
+    private bool _canTimer;
+    private bool _canTimerSprite;
+    private Sprite _baseSprite;
+
+    private void Awake()
+    {
+        _baseSprite = GetComponent<SpriteRenderer>().sprite;
+    }
     private void Start()
     {
         _canTimer = false;
+        _canTimerSprite = false;
     }
     private void Update()
     {
-        CheckTimer();
+        CheckTimerScore();
+        CheckTimerSprite();
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
@@ -33,12 +45,15 @@ public class Bumper : MonoBehaviour
 
                 _score.GetSound(_sound);
                 _score.PlaySound();
+                gameObject.GetComponent<SpriteRenderer>().sprite = _spriteWhenTouched;
 
+                _currentTimerChangeSprite = 0;
+                _canTimerSprite = true;
                 _canTimer = true;
             }
         }
     }
-    private void CheckTimer()
+    private void CheckTimerScore()
     {
         if (_canTimer)
         {
@@ -47,6 +62,17 @@ public class Bumper : MonoBehaviour
             {
                 _currentTimerBetweenGetScore = 0;
                 _canTimer = false;
+            }
+        }
+    }
+    private void CheckTimerSprite()
+    {
+        if (_canTimerSprite)
+        {
+            _currentTimerChangeSprite += Time.deltaTime;
+            if (_currentTimerChangeSprite >= _maxTimerChangeSprite)
+            {
+                GetComponent<SpriteRenderer>().sprite = _baseSprite;
             }
         }
     }

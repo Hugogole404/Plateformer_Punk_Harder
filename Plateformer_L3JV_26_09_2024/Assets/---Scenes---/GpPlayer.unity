@@ -348,6 +348,14 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 384424877}
     - target: {fileID: 2462585802389066436, guid: c81f2a54982a05e41a9c3297bbf2a13f, type: 3}
+      propertyPath: _spriteWhenTouched
+      value: 
+      objectReference: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+    - target: {fileID: 2462585802389066436, guid: c81f2a54982a05e41a9c3297bbf2a13f, type: 3}
+      propertyPath: _maxTimerChangeSprite
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2462585802389066436, guid: c81f2a54982a05e41a9c3297bbf2a13f, type: 3}
       propertyPath: _maxTimerBetweenGetScore
       value: 0.1
       objectReference: {fileID: 0}
