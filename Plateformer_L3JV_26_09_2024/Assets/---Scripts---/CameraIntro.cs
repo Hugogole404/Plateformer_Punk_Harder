@@ -8,14 +8,8 @@ public class CameraIntro : MonoBehaviour
     float _Ypos = 0;
     [SerializeField] float _speed;
     [SerializeField] float _endY;
+    [SerializeField] float _slowTime;
     [SerializeField] GameObject _mainCamera;
-
-    void Start()
-    {
-        _endY = -22.7f;/*Camera.main.transform.position.y;
-        Camera.main.enabled = false;
-        print(_endY);*/
-    }
 
     void Update()
     {
@@ -24,6 +18,11 @@ public class CameraIntro : MonoBehaviour
             _mainCamera.SetActive(true);
             Destroy(gameObject);
             return;
+        }
+
+        if (_endY + 10 > _Ypos)
+        {
+            _speed -= Time.deltaTime * _slowTime;
         }
 
         if (gameObject.GetComponent<Camera>().enabled)
