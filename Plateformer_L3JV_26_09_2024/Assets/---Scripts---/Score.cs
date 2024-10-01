@@ -6,7 +6,9 @@ using TMPro;
 
 public class Score : MonoBehaviour
 {
-    [SerializeField] TextMeshProUGUI _textScore;
+    [SerializeField] private AudioSource AudioSourceBumpers;
+    [SerializeField] private TextMeshProUGUI _textScore;
+
     [Header("Bumpers")]
     [SerializeField] private int _scoreGivenBumpers;
     private int _actualScore;
@@ -15,5 +17,13 @@ public class Score : MonoBehaviour
     {
         _actualScore += _scoreGivenBumpers;
         _textScore.text = $"Score : {_actualScore}";
+    }
+    public void PlaySound()
+    {
+        AudioSourceBumpers.Play();
+    }
+    public void GetSound(AudioClip clip)
+    {
+        AudioSourceBumpers.clip = clip;
     }
 }
