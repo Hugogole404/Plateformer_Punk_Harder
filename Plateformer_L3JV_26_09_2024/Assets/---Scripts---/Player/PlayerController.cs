@@ -71,6 +71,9 @@ public class PlayerController : MonoBehaviour
         _rigidbody.AddForce(new Vector2(0, 1) * _gravity * _gravityMultiplier, ForceMode2D.Force);
         _rigidbody.AddForce(_inputs * _speed, ForceMode2D.Force);
     }
+    //public void CheckLayerGround(Collider2D collision)
+    //{
+    //}
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
