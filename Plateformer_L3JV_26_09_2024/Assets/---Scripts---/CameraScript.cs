@@ -17,4 +17,10 @@ public class CameraScript : MonoBehaviour
     {
         _splineAnimate.MaxSpeed += _acceleration * Time.deltaTime;
     }
+
+    public void RestartCamera()
+    {
+        _splineAnimate.ElapsedTime = 0;
+        _splineAnimate.MaxSpeed = 0;
+    }
 }
