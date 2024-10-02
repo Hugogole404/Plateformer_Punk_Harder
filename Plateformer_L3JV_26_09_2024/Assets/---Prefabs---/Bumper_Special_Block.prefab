@@ -72,7 +72,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: 5d3d3223fc5c7bf4dbc33ab83936c1fe, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -235,8 +235,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 178c31bdd8840ce44a60ce48d3011308, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _thisGO: {fileID: 0}
-  _score: {fileID: 3251432847901277491, guid: 97ee25207589a654abda969e8113d951, type: 3}
+  _thisGO: {fileID: 6569573668431977197}
+  _score: {fileID: 0}
   _maxTimerBetweenGetScore: 0
   _sound: {fileID: 0}
   _spriteWhenTouched: {fileID: 21300000, guid: 03b76d4754175d24092b797ed1b463eb, type: 3}

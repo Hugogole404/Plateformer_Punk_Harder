@@ -5,7 +5,7 @@ using UnityEngine.Splines;
 
 public class CameraScript : MonoBehaviour
 {
-    [SerializeField] float _acceleration;
+    public float _acceleration;
     SplineAnimate _splineAnimate;
     
     void Start()
