@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Runtime.InteropServices;
+using TMPro;
 using UnityEditor.Rendering;
 using UnityEditorInternal;
 using UnityEngine;
@@ -11,6 +12,7 @@ public class PlayerController : MonoBehaviour
     [Header("Movements")]
     [SerializeField] private float _speed;
     [SerializeField] private Rigidbody2D _rigidbody;
+    [SerializeField] private GameObject _basePlayerParent;
     [Header("Jumps")]
     [SerializeField] private float _jumpForce;
     [SerializeField] private int _maxNumbOFJump;
@@ -28,6 +30,10 @@ public class PlayerController : MonoBehaviour
     private Vector2 _direction = Vector2.zero;
     private bool _canJump;
     [HideInInspector] public bool IsGrounded;
+    Vector3 _offset;
+    Transform _toFollow;
+
+
 
     private void Start()
     {
@@ -84,7 +90,21 @@ public class PlayerController : MonoBehaviour
         {
             IsGrounded = true;
             _currentNumberOfJumps = 0;
+
             CheckJumpConditions();
+        }
+    }
+    private void OnCollisionStay2D(Collision2D collision)
+    {
+        if (((1 << collision.gameObject.layer) & _layerMask) != 0)
+        {
+            if (collision.gameObject.GetComponent<PaternObject>() != null) 
+            {
+                PaternObject groundCollision = collision.gameObject.GetComponent<PaternObject>();
+                float deltaX = groundCollision.NextPosX - groundCollision.PosX;
+                float deltaY = groundCollision.NextPosY - groundCollision.PosY;
+                transform.position += new Vector3(deltaX, deltaY) * 4;
+            }
         }
     }
     private void CheckJumpConditions()

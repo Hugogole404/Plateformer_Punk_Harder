@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UIElements;
 
 public class PaternObject : MonoBehaviour
 {
@@ -13,6 +14,11 @@ public class PaternObject : MonoBehaviour
     [HideInInspector] public float OffsetX = 0f;
     [HideInInspector] public float OffsetY = 0f;
     Vector2 _positionInitial;
+
+    [HideInInspector] public float PosX;
+    [HideInInspector] public float PosY;  
+    [HideInInspector] public float NextPosX;
+    [HideInInspector] public float NextPosY;
     
 
     void Start()
@@ -42,6 +48,10 @@ public class PaternObject : MonoBehaviour
             resultX = Mathf.Sin(OffsetX) * _distanceX;
 
         resultY = Mathf.Sin(OffsetY) * _distanceY;
+        PosX = transform.position.x;
+        PosY = transform.position.y;
         transform.position = new Vector3(_positionInitial.x + resultX, _positionInitial.y + resultY);
+        NextPosX = transform.position.x;
+        NextPosY = transform.position.y;
     }
 }
