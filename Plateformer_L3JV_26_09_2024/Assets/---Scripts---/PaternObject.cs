@@ -10,8 +10,8 @@ public class PaternObject : MonoBehaviour
     [SerializeField] float _AnimationTime;
     [SerializeField] bool circle;
 
-    float _offsetX = 0f;
-    float _offsetY = 0f;
+    [HideInInspector] public float OffsetX = 0f;
+    [HideInInspector] public float OffsetY = 0f;
     Vector2 _positionInitial;
     
 
@@ -34,14 +34,14 @@ public class PaternObject : MonoBehaviour
         float resultX;
         float resultY;
 
-        _offsetX += Time.deltaTime * Mathf.PI / _AnimationTime * 2;
-        _offsetY += Time.deltaTime * Mathf.PI / _AnimationTime * 2;
+        OffsetX += Time.deltaTime * Mathf.PI / _AnimationTime * 2;
+        OffsetY += Time.deltaTime * Mathf.PI / _AnimationTime * 2;
         if (circle)
-            resultX = Mathf.Sin(_offsetX + Mathf.PI / 2) * _distanceX;
+            resultX = Mathf.Sin(OffsetX + Mathf.PI / 2) * _distanceX;
         else
-            resultX = Mathf.Sin(_offsetX) * _distanceX;
+            resultX = Mathf.Sin(OffsetX) * _distanceX;
 
-        resultY = Mathf.Sin(_offsetY) * _distanceY;
+        resultY = Mathf.Sin(OffsetY) * _distanceY;
         transform.position = new Vector3(_positionInitial.x + resultX, _positionInitial.y + resultY);
     }
 }
