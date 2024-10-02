@@ -71,6 +71,7 @@ public class PlayerController : MonoBehaviour
         CheckJumpConditions();
         if (_canJump)
         {
+            _rigidbody.velocity = new Vector2(_rigidbody.velocity.x, 0);
             _rigidbody.AddForce(new Vector2(0, _jumpForce), ForceMode2D.Impulse);
             _currentNumberOfJumps += 1;
         }

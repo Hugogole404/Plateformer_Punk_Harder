@@ -1257,7 +1257,7 @@ PrefabInstance:
       objectReference: {fileID: 208006686}
     - target: {fileID: 2376505291958797742, guid: 04789cc36cb31a54898f4474c56c8bcf, type: 3}
       propertyPath: _maxNumbOFJump
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2376505291958797742, guid: 04789cc36cb31a54898f4474c56c8bcf, type: 3}
       propertyPath: _basePlayerParent
