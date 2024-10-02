@@ -19,6 +19,8 @@ public class PaternObject : MonoBehaviour
     [HideInInspector] public float PosY;  
     [HideInInspector] public float NextPosX;
     [HideInInspector] public float NextPosY;
+    [HideInInspector] public float OffsetPlatX;
+    [HideInInspector] public float OffsetPlatY;
     
 
     void Start()
@@ -50,8 +52,13 @@ public class PaternObject : MonoBehaviour
         resultY = Mathf.Sin(OffsetY) * _distanceY;
         PosX = transform.position.x;
         PosY = transform.position.y;
+
         transform.position = new Vector3(_positionInitial.x + resultX, _positionInitial.y + resultY);
+
         NextPosX = transform.position.x;
         NextPosY = transform.position.y;
+
+        OffsetPlatX = NextPosX - PosX;
+        OffsetPlatY = NextPosY - PosY;
     }
 }

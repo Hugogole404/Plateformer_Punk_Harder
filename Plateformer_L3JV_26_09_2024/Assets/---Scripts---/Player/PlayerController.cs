@@ -101,11 +101,12 @@ public class PlayerController : MonoBehaviour
             if (collision.gameObject.GetComponent<PaternObject>() != null) 
             {
                 PaternObject groundCollision = collision.gameObject.GetComponent<PaternObject>();
-                float deltaX = groundCollision.NextPosX - groundCollision.PosX;
-                float deltaY = groundCollision.NextPosY - groundCollision.PosY;
+                //float deltaX = groundCollision.NextPosX - groundCollision.PosX;
+                //float deltaY = groundCollision.NextPosY - groundCollision.PosY;
                 //_rigidbody.AddForce(new Vector3(deltaX, deltaY) * 200, ForceMode2D.Force);
                 //Debug.Log($"{collision.gameObject.name} : {deltaX}, {deltaY}");
-                transform.position += new Vector3(deltaX, deltaY) * 250 * Time.deltaTime;
+                transform.position += new Vector3(groundCollision.OffsetPlatX, groundCollision.OffsetPlatY) * 10;
+                //transform.position += new Vector3(deltaX, deltaY) * 5;
                 //_rigidbody.freezeRotation = true;
             }
         }
