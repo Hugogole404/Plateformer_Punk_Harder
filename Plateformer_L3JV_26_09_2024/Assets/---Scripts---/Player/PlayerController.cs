@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Runtime.InteropServices;
 using TMPro;
+using Unity.VisualScripting;
 using UnityEditor.Rendering;
 using UnityEditorInternal;
 using UnityEngine;
@@ -13,7 +14,6 @@ public class PlayerController : MonoBehaviour
     [Header("Movements")]
     [SerializeField] private float _speed;
     [SerializeField] private Rigidbody2D _rigidbody;
-    [SerializeField] private GameObject _basePlayerParent;
     [Header("Jumps")]
     [SerializeField] private float _jumpForce;
     [SerializeField] private int _maxNumbOFJump;
@@ -24,6 +24,8 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private GameObject _spawnPoint;
     [Header("Gravity")]
     [SerializeField] private float _gravityMultiplier;
+    [Header("Animator")]
+    [SerializeField] private Animator _animator;
 
     [HideInInspector] public bool IsGrounded;
 
@@ -34,13 +36,14 @@ public class PlayerController : MonoBehaviour
     private bool _canJump;
     private Vector3 _offset;
     private Transform _toFollow;
-
-
+    private PaternObject _currentPlatform;
+    private float _maxSpeedWalk;
 
     private void Start()
     {
         TeleportPlayerToSpawnPoint();
         _currentTimerBetweenJumps = 0;
+        _animator.SetBool("IsBall", false);
     }
     private void Update()
     {
@@ -50,7 +53,7 @@ public class PlayerController : MonoBehaviour
     {
         ApplyMovements();
 
-        if ( _currentPlatform != null)
+        if (_currentPlatform != null)
         {
             transform.position += new Vector3(_currentPlatform.OffsetPlatX, _currentPlatform.OffsetPlatY);
         }
@@ -88,10 +91,6 @@ public class PlayerController : MonoBehaviour
         _rigidbody.AddForce(new Vector2(0, 1) * _gravity * _gravityMultiplier, ForceMode2D.Force);
         _rigidbody.AddForce(_inputs * _speed, ForceMode2D.Force);
     }
-    //public void CheckLayerGround(Collider2D collision)
-    //{
-    //}
-
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (((1 << collision.gameObject.layer) & _layerMask) != 0)
@@ -100,39 +99,17 @@ public class PlayerController : MonoBehaviour
             _currentNumberOfJumps = 0;
 
             CheckJumpConditions();
- 
+
             if (collision.gameObject.GetComponent<PaternObject>() != null)
             {
                 _currentPlatform = collision.gameObject.GetComponent<PaternObject>();
-
-                //float deltaX = groundCollision.NextPosX - groundCollision.PosX;
-                //float deltaY = groundCollision.NextPosY - groundCollision.PosY;
-                //_rigidbody.AddForce(new Vector3(deltaX, deltaY) * 200, ForceMode2D.Force);
-                //Debug.Log($"{collision.gameObject.name} : {deltaX}, {deltaY}");
-                //transform.position += new Vector3(groundCollision.OffsetPlatX, groundCollision.OffsetPlatY) * 10;
-                //transform.position += new Vector3(deltaX, deltaY) * 5;
             }
         }
     }
-    //private void OnCollisionStay2D(Collision2D collision)
-    //{
-    //    if (((1 << collision.gameObject.layer) & _layerMask) != 0)
-    //    {
-    //        if (collision.gameObject.GetComponent<PaternObject>() != null) 
-    //        {
-    //            PaternObject groundCollision = collision.gameObject.GetComponent<PaternObject>();
-    //            //float deltaX = groundCollision.NextPosX - groundCollision.PosX;
-    //            //float deltaY = groundCollision.NextPosY - groundCollision.PosY;
-    //            //_rigidbody.AddForce(new Vector3(deltaX, deltaY) * 200, ForceMode2D.Force);
-    //            //Debug.Log($"{collision.gameObject.name} : {deltaX}, {deltaY}");
-    //            transform.position += new Vector3(groundCollision.OffsetPlatX, groundCollision.OffsetPlatY) * 10;
-    //            //transform.position += new Vector3(deltaX, deltaY) * 5;
-    //        }
-    //    }
-    //}
-
-    PaternObject _currentPlatform;
-
+    private void OnCollisionExit2D(Collision2D collision)
+    {
+        _currentPlatform = null;
+    }
     private void CheckJumpConditions()
     {
         if (_minTimerBetweenJumps <= _currentTimerBetweenJumps && _currentNumberOfJumps < _maxNumbOFJump && IsGrounded)
@@ -143,6 +120,25 @@ public class PlayerController : MonoBehaviour
         else
         {
             _canJump = false;
+        }
+    }
+    private void CheckSpeedForAnimator()
+    {
+        if (_rigidbody.velocity.magnitude > 0)
+        {
+            if (_rigidbody.velocity.magnitude < _maxSpeedWalk)
+            {
+                _animator.SetBool("IsWalking", true);
+                _animator.SetBool("IsBall", false);
+                _animator.SetBool("TransitionBall", false);
+
+            }
+            else if (_rigidbody.velocity.magnitude > _maxSpeedWalk)
+            {
+                _animator.SetBool("IsBall", true);
+                _animator.SetBool("IsWalking", false);
+                _animator.SetBool("TransitionBall", false);
+            }
         }
     }
 }
