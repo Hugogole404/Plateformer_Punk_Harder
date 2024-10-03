@@ -21,7 +21,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float _minTimerBetweenJumps;
     [SerializeField] private LayerMask _layerMask;
     [Header("Spawn Point")]
-    [SerializeField] private GameObject _spawnPoint;
+    public GameObject _spawnPoint;
     [Header("Gravity")]
     [SerializeField] private float _gravityMultiplier;
     [Header("Animator")]

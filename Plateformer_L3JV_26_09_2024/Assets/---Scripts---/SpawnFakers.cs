@@ -4,17 +4,16 @@ using UnityEngine;
 
 public class SpawnFakers : MonoBehaviour
 {
-    
-    
-    // Start is called before the first frame update
-    void Start()
+    [SerializeField] private float _maxTimer;
+    private float _currentTimer;
+
+    private void Update()
     {
-        
+        SpawnTimer();
     }
 
-    // Update is called once per frame
-    void Update()
+    private void SpawnTimer()
     {
-        
+
     }
 }

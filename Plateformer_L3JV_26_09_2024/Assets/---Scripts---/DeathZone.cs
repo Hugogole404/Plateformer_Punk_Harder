@@ -8,11 +8,12 @@ public class DeathZone : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.GetComponent<PlayerController>() != null)
+        if(collision.gameObject.GetComponent<PlayerController>() != null)
         {
-            collision.GetComponent<PlayerController>().TeleportPlayerToSpawnPoint();
-            collision.GetComponent<PlayerController>().ResetCurrentPlateform();
-            _mainCamera.GetComponent<CameraScript>().RestartCamera();
+            PlayerController player = collision.GetComponent<PlayerController>();
+            player.TeleportPlayerToSpawnPoint();
+            player.ResetCurrentPlateform();
+            _mainCamera.GetComponent<CameraScript>().RestartCamera(player);
         }
     }
 }

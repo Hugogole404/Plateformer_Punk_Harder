@@ -70,9 +70,17 @@ public class CameraScript : MonoBehaviour
             _bonusSpeedEnabled = false;
     }
 
-    public void RestartCamera()
+    public void RestartCamera(PlayerController player)
     {
-        _splineAnimate.ElapsedTime = 0;
-        _splineAnimate.MaxSpeed = 0;
+        if (player._spawnPoint.GetComponentInParent<Checkpoints>() != null)
+        {
+            float timeSpline = player._spawnPoint.GetComponentInParent<Checkpoints>().TimeForCamera;
+            _splineAnimate.ElapsedTime = timeSpline;
+        }
+        else
+        {
+            _splineAnimate.ElapsedTime = 0;
+            _splineAnimate.MaxSpeed = 0;
+        }
     }
 }
