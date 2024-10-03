@@ -5,6 +5,7 @@ using UnityEngine;
 public class DeathZone : MonoBehaviour
 {
     [SerializeField] Camera _mainCamera;
+    //[SerializeField] GameObject _spawnerBallFaker;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
