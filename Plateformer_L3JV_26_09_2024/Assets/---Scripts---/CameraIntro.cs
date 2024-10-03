@@ -13,14 +13,14 @@ public class CameraIntro : MonoBehaviour
 
     void Update()
     {
-        if (_endY > _Ypos) 
+        if ((_endY > _Ypos) || (_speed < 0)) 
         {
             _mainCamera.SetActive(true);
             Destroy(gameObject);
             return;
         }
 
-        if (_endY + 10 > _Ypos)
+        if ((_endY + 10 > _Ypos))
         {
             _speed -= Time.deltaTime * _slowPower;
         }

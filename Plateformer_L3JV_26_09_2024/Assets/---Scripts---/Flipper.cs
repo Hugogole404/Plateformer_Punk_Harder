@@ -25,7 +25,7 @@ public class Flipper : MonoBehaviour
     {
         if (other.GetComponent<Rigidbody2D>() != null)
         {
-            other.GetComponent<Rigidbody2D>().velocity = new Vector2(_forceX * _force, 1 * _force);
+            other.GetComponent<Rigidbody2D>().velocity = new Vector2(_forceX * _force, 1 * _force * 2);
             playAnim();
         }
     }
