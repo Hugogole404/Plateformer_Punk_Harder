@@ -1,12 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Serialization;
 using UnityEngine.Splines;
 
 public class CameraScript : MonoBehaviour
 {
     public float _acceleration;
-    [SerializeField] float _bonusSpeed;
+    [SerializeField] float _bonusTime;
     SplineAnimate _splineAnimate;
 
     bool _bonusSpeedEnabled = false;
@@ -25,9 +26,11 @@ public class CameraScript : MonoBehaviour
     
     void Update()
     {
+        _splineAnimate.MaxSpeed += _acceleration * Time.deltaTime;
+
         if (_bonusSpeedEnabled)
-            _splineAnimate.MaxSpeed += _acceleration * Time.deltaTime * _bonusSpeed;
-        else _splineAnimate.MaxSpeed += _acceleration * Time.deltaTime;
+            _splineAnimate.ElapsedTime += _bonusTime;
+
         float horizontalSpeed, verticalSpeed;
 
         ComputeVelocity(out horizontalSpeed, out verticalSpeed);
