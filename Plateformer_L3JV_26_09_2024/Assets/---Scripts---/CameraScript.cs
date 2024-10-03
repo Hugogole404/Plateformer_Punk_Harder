@@ -4,8 +4,7 @@ using UnityEngine;
 
 public class CameraScript : MonoBehaviour
 {
-    [SerializeField] float _speed;
-    [SerializeField] float _acceleration;
+    public float _speed = 1.0f; 
 
     // Start is called before the first frame update
     void Start()
