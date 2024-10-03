@@ -108,6 +108,10 @@ public class PlayerController : MonoBehaviour
     }
     private void OnCollisionExit2D(Collision2D collision)
     {
+        ResetCurrentPlateform();
+    }
+    public void ResetCurrentPlateform()
+    {
         _currentPlatform = null;
     }
     private void CheckJumpConditions()
@@ -131,7 +135,6 @@ public class PlayerController : MonoBehaviour
                 _animator.SetBool("IsWalking", true);
                 _animator.SetBool("IsBall", false);
                 _animator.SetBool("TransitionBall", false);
-
             }
             else if (_rigidbody.velocity.magnitude > _maxSpeedWalk)
             {

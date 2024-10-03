@@ -11,6 +11,7 @@ public class DeathZone : MonoBehaviour
         if(collision.GetComponent<PlayerController>() != null)
         {
             collision.GetComponent<PlayerController>().TeleportPlayerToSpawnPoint();
+            collision.GetComponent<PlayerController>().ResetCurrentPlateform();
             _mainCamera.GetComponent<CameraScript>().RestartCamera();
         }
     }
