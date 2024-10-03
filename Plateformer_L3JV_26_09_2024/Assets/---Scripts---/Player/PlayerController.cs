@@ -26,6 +26,8 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float _gravityMultiplier;
     [Header("Animator")]
     [SerializeField] private Animator _animator;
+    [SerializeField] private float _maxSpeedIdle;
+    [SerializeField] private float _maxSpeedWalk;
 
     [HideInInspector] public bool IsGrounded;
 
@@ -37,17 +39,19 @@ public class PlayerController : MonoBehaviour
     private Vector3 _offset;
     private Transform _toFollow;
     private PatternObject _currentPlatform;
-    private float _maxSpeedWalk;
 
     private void Start()
     {
         TeleportPlayerToSpawnPoint();
         _currentTimerBetweenJumps = 0;
-        //_animator.SetBool("IsBall", false);
+        _animator.SetBool("IsBall", false);
+        _animator.SetBool("IsBall", false);
+        _animator.SetBool("TransitionBall", false);
     }
     private void Update()
     {
         _currentTimerBetweenJumps += Time.deltaTime;
+        CheckSpeedForAnimator();
     }
     private void FixedUpdate()
     {
@@ -69,10 +73,6 @@ public class PlayerController : MonoBehaviour
     }
     public void Move(InputAction.CallbackContext context)
     {
-        if (context.canceled)
-        {
-            //_rigidbody.velocity /= 2;
-        }
         _inputs = context.ReadValue<Vector2>();
     }
     public void Jump(InputAction.CallbackContext context)
@@ -130,18 +130,24 @@ public class PlayerController : MonoBehaviour
     {
         if (_rigidbody.velocity.magnitude > 0)
         {
-            //if (_rigidbody.velocity.magnitude < _maxSpeedWalk)
-            //{
-            //    _animator.SetBool("IsWalking", true);
-            //    _animator.SetBool("IsBall", false);
-            //    _animator.SetBool("TransitionBall", false);
-            //}
-            //else if (_rigidbody.velocity.magnitude > _maxSpeedWalk)
-            //{
-            //    _animator.SetBool("IsBall", true);
-            //    _animator.SetBool("IsWalking", false);
-            //    _animator.SetBool("TransitionBall", false);
-            //}
+            if(_rigidbody.velocity.magnitude < _maxSpeedIdle)
+            {
+                _animator.SetBool("IsWalking", false);
+                _animator.SetBool("IsBall", false);
+                _animator.SetBool("TransitionBall", false);
+            }
+            else if (_rigidbody.velocity.magnitude < _maxSpeedWalk)
+            {
+                _animator.SetBool("IsWalking", true);
+                _animator.SetBool("IsBall", false);
+                _animator.SetBool("TransitionBall", false);
+            }
+            else if (_rigidbody.velocity.magnitude > _maxSpeedWalk)
+            {
+                _animator.SetBool("IsBall", true);
+                _animator.SetBool("IsWalking", false);
+                _animator.SetBool("TransitionBall", false);
+            }
         }
     }
 }
