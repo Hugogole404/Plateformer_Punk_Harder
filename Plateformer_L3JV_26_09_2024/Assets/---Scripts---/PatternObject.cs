@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.Serialization;
 using UnityEngine.UIElements;
 
-public class PaternObject : MonoBehaviour
+public class PatternObject : MonoBehaviour
 {
     [Header("Movement")]
     [SerializeField] float _distanceX;

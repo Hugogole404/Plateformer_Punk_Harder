@@ -36,7 +36,7 @@ public class PlayerController : MonoBehaviour
     private bool _canJump;
     private Vector3 _offset;
     private Transform _toFollow;
-    private PaternObject _currentPlatform;
+    private PatternObject _currentPlatform;
     private float _maxSpeedWalk;
 
     private void Start()
@@ -100,9 +100,9 @@ public class PlayerController : MonoBehaviour
 
             CheckJumpConditions();
 
-            if (collision.gameObject.GetComponent<PaternObject>() != null)
+            if (collision.gameObject.GetComponent<PatternObject>() != null)
             {
-                _currentPlatform = collision.gameObject.GetComponent<PaternObject>();
+                _currentPlatform = collision.gameObject.GetComponent<PatternObject>();
             }
         }
     }
