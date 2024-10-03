@@ -19,6 +19,11 @@ public class CameraScript : MonoBehaviour
         _splineAnimate.MaxSpeed += _acceleration * Time.deltaTime * _bonusSpeed;
     }
 
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        print("test");
+    }
+
     public void RestartCamera()
     {
         _splineAnimate.ElapsedTime = 0;
