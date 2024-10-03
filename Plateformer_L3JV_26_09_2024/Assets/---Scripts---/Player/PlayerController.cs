@@ -43,7 +43,7 @@ public class PlayerController : MonoBehaviour
     {
         TeleportPlayerToSpawnPoint();
         _currentTimerBetweenJumps = 0;
-        _animator.SetBool("IsBall", false);
+        //_animator.SetBool("IsBall", false);
     }
     private void Update()
     {
@@ -130,18 +130,18 @@ public class PlayerController : MonoBehaviour
     {
         if (_rigidbody.velocity.magnitude > 0)
         {
-            if (_rigidbody.velocity.magnitude < _maxSpeedWalk)
-            {
-                _animator.SetBool("IsWalking", true);
-                _animator.SetBool("IsBall", false);
-                _animator.SetBool("TransitionBall", false);
-            }
-            else if (_rigidbody.velocity.magnitude > _maxSpeedWalk)
-            {
-                _animator.SetBool("IsBall", true);
-                _animator.SetBool("IsWalking", false);
-                _animator.SetBool("TransitionBall", false);
-            }
+            //if (_rigidbody.velocity.magnitude < _maxSpeedWalk)
+            //{
+            //    _animator.SetBool("IsWalking", true);
+            //    _animator.SetBool("IsBall", false);
+            //    _animator.SetBool("TransitionBall", false);
+            //}
+            //else if (_rigidbody.velocity.magnitude > _maxSpeedWalk)
+            //{
+            //    _animator.SetBool("IsBall", true);
+            //    _animator.SetBool("IsWalking", false);
+            //    _animator.SetBool("TransitionBall", false);
+            //}
         }
     }
 }
