@@ -6,6 +6,7 @@ using UnityEditor.Rendering;
 using UnityEditorInternal;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.Serialization;
 
 public class PlayerController : MonoBehaviour
 {
@@ -24,14 +25,15 @@ public class PlayerController : MonoBehaviour
     [Header("Gravity")]
     [SerializeField] private float _gravityMultiplier;
 
+    [HideInInspector] public bool IsGrounded;
+
     private float _gravity = -9.81f;
     private float _currentTimerBetweenJumps;
     private Vector2 _inputs;
     private Vector2 _direction = Vector2.zero;
     private bool _canJump;
-    [HideInInspector] public bool IsGrounded;
-    Vector3 _offset;
-    Transform _toFollow;
+    private Vector3 _offset;
+    private Transform _toFollow;
 
 
 
@@ -47,6 +49,11 @@ public class PlayerController : MonoBehaviour
     private void FixedUpdate()
     {
         ApplyMovements();
+
+        if ( _currentPlatform != null)
+        {
+            transform.position += new Vector3(_currentPlatform.OffsetPlatX, _currentPlatform.OffsetPlatY);
+        }
     }
 
     public void TeleportPlayerToSpawnPoint()
@@ -93,25 +100,39 @@ public class PlayerController : MonoBehaviour
             _currentNumberOfJumps = 0;
 
             CheckJumpConditions();
-        }
-    }
-    private void OnCollisionStay2D(Collision2D collision)
-    {
-        if (((1 << collision.gameObject.layer) & _layerMask) != 0)
-        {
-            if (collision.gameObject.GetComponent<PaternObject>() != null) 
+ 
+            if (collision.gameObject.GetComponent<PaternObject>() != null)
             {
-                PaternObject groundCollision = collision.gameObject.GetComponent<PaternObject>();
+                _currentPlatform = collision.gameObject.GetComponent<PaternObject>();
+
                 //float deltaX = groundCollision.NextPosX - groundCollision.PosX;
                 //float deltaY = groundCollision.NextPosY - groundCollision.PosY;
                 //_rigidbody.AddForce(new Vector3(deltaX, deltaY) * 200, ForceMode2D.Force);
                 //Debug.Log($"{collision.gameObject.name} : {deltaX}, {deltaY}");
-                transform.position += new Vector3(groundCollision.OffsetPlatX, groundCollision.OffsetPlatY) * 10;
+                //transform.position += new Vector3(groundCollision.OffsetPlatX, groundCollision.OffsetPlatY) * 10;
                 //transform.position += new Vector3(deltaX, deltaY) * 5;
-                //_rigidbody.freezeRotation = true;
             }
         }
     }
+    //private void OnCollisionStay2D(Collision2D collision)
+    //{
+    //    if (((1 << collision.gameObject.layer) & _layerMask) != 0)
+    //    {
+    //        if (collision.gameObject.GetComponent<PaternObject>() != null) 
+    //        {
+    //            PaternObject groundCollision = collision.gameObject.GetComponent<PaternObject>();
+    //            //float deltaX = groundCollision.NextPosX - groundCollision.PosX;
+    //            //float deltaY = groundCollision.NextPosY - groundCollision.PosY;
+    //            //_rigidbody.AddForce(new Vector3(deltaX, deltaY) * 200, ForceMode2D.Force);
+    //            //Debug.Log($"{collision.gameObject.name} : {deltaX}, {deltaY}");
+    //            transform.position += new Vector3(groundCollision.OffsetPlatX, groundCollision.OffsetPlatY) * 10;
+    //            //transform.position += new Vector3(deltaX, deltaY) * 5;
+    //        }
+    //    }
+    //}
+
+    PaternObject _currentPlatform;
+
     private void CheckJumpConditions()
     {
         if (_minTimerBetweenJumps <= _currentTimerBetweenJumps && _currentNumberOfJumps < _maxNumbOFJump && IsGrounded)

@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Serialization;
 using UnityEngine.UIElements;
 
 public class PaternObject : MonoBehaviour
@@ -8,24 +9,24 @@ public class PaternObject : MonoBehaviour
     [Header("Movement")]
     [SerializeField] float _distanceX;
     [SerializeField] float _distanceY;
-    [SerializeField] float _AnimationTime;
-    [SerializeField] bool circle;
+    [SerializeField, FormerlySerializedAs("_AnimationTime")] float _animationTime;
+    [SerializeField, FormerlySerializedAs("circle")] bool _circle;
 
     [HideInInspector] public float OffsetX = 0f;
     [HideInInspector] public float OffsetY = 0f;
     Vector2 _positionInitial;
 
-    [HideInInspector] public float PosX;
-    [HideInInspector] public float PosY;  
-    [HideInInspector] public float NextPosX;
-    [HideInInspector] public float NextPosY;
+    [FormerlySerializedAs("PosX")] private float _posX;
+    [FormerlySerializedAs("PosY")] private float _posY;  
+    [FormerlySerializedAs("NextPosX")] private float _nextPosX;
+    [FormerlySerializedAs("NextPosY")] private float _nextPosY;
     [HideInInspector] public float OffsetPlatX;
     [HideInInspector] public float OffsetPlatY;
     
 
     void Start()
     {
-        if ((_distanceX == 0f && _distanceY == 0f) || _AnimationTime == 0)
+        if ((_distanceX == 0f && _distanceY == 0f) || _animationTime == 0)
         {
             Destroy(this);
             return;
@@ -37,28 +38,30 @@ public class PaternObject : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         float resultX;
         float resultY;
 
-        OffsetX += Time.deltaTime * Mathf.PI / _AnimationTime * 2;
-        OffsetY += Time.deltaTime * Mathf.PI / _AnimationTime * 2;
-        if (circle)
+
+        OffsetX += Time.deltaTime * Mathf.PI / _animationTime * 2;
+        OffsetY += Time.deltaTime * Mathf.PI / _animationTime * 2;
+
+        if (_circle)
             resultX = Mathf.Sin(OffsetX + Mathf.PI / 2) * _distanceX;
         else
             resultX = Mathf.Sin(OffsetX) * _distanceX;
 
         resultY = Mathf.Sin(OffsetY) * _distanceY;
-        PosX = transform.position.x;
-        PosY = transform.position.y;
+        _posX = transform.position.x;
+        _posY = transform.position.y;
 
         transform.position = new Vector3(_positionInitial.x + resultX, _positionInitial.y + resultY);
 
-        NextPosX = transform.position.x;
-        NextPosY = transform.position.y;
+        _nextPosX = transform.position.x;
+        _nextPosY = transform.position.y;
 
-        OffsetPlatX = NextPosX - PosX;
-        OffsetPlatY = NextPosY - PosY;
+        OffsetPlatX = _nextPosX - _posX;
+        OffsetPlatY = _nextPosY - _posY;
     }
 }
