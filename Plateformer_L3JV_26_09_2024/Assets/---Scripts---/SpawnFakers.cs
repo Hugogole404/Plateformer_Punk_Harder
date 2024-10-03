@@ -4,8 +4,9 @@ using UnityEngine;
 
 public class SpawnFakers : MonoBehaviour
 {
-    [SerializeField] private float _maxTimer;
-    private float _currentTimer;
+    [SerializeField] private float _maxTimerBetweenSpawnBalls;
+    [SerializeField] private GameObject _prefabBall;
+    private float _currentTimerBetweenSpawnBalls;
 
     private void Update()
     {
@@ -14,6 +15,6 @@ public class SpawnFakers : MonoBehaviour
 
     private void SpawnTimer()
     {
-
+        //if()
     }
 }
