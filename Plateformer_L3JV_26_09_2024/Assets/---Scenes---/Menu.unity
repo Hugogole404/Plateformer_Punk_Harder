@@ -213,6 +213,7 @@ GameObject:
   - component: {fileID: 281178367}
   - component: {fileID: 281178369}
   - component: {fileID: 281178368}
+  - component: {fileID: 281178370}
   m_Layer: 5
   m_Name: A
   m_TagString: Untagged
@@ -277,6 +278,27 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 281178366}
   m_CullTransparentMesh: 1
+--- !u!95 &281178370
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 281178366}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 53c9a959bb2c19b4ead0a82ef1f3f929, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &290691605
 GameObject:
   m_ObjectHideFlags: 0
@@ -2010,6 +2032,7 @@ GameObject:
   - component: {fileID: 1318084465}
   - component: {fileID: 1318084467}
   - component: {fileID: 1318084466}
+  - component: {fileID: 1318084468}
   m_Layer: 5
   m_Name: Punk
   m_TagString: Untagged
@@ -2033,7 +2056,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -46.5, y: 2.1}
+  m_AnchoredPosition: {x: -46.488785, y: 2.0756836}
   m_SizeDelta: {x: 72.16, y: 17.382}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1318084466
@@ -2074,6 +2097,27 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1318084464}
   m_CullTransparentMesh: 1
+--- !u!95 &1318084468
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1318084464}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: afe1a3a2570954d4fb9de6c32881555f, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1404252957
 GameObject:
   m_ObjectHideFlags: 0
