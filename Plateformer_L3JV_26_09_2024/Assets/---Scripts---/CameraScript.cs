@@ -6,6 +6,7 @@ using UnityEngine.Splines;
 public class CameraScript : MonoBehaviour
 {
     public float _acceleration;
+    [SerializeField] float _bonusSpeed;
     SplineAnimate _splineAnimate;
     
     void Start()
@@ -15,7 +16,7 @@ public class CameraScript : MonoBehaviour
     
     void Update()
     {
-        _splineAnimate.MaxSpeed += _acceleration * Time.deltaTime;
+        _splineAnimate.MaxSpeed += _acceleration * Time.deltaTime * _bonusSpeed;
     }
 
     public void RestartCamera()
