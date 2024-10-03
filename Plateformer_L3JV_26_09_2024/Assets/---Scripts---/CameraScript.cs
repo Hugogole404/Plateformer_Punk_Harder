@@ -8,20 +8,63 @@ public class CameraScript : MonoBehaviour
     public float _acceleration;
     [SerializeField] float _bonusSpeed;
     SplineAnimate _splineAnimate;
-    
+
+    bool _bonusSpeedEnabled = false;
+    [SerializeField] BoxCollider2D _upCollision;
+    [SerializeField] BoxCollider2D _rightCollision;
+
+    private Vector3 lastPosition;
+    private float deltaTime;
+
     void Start()
     {
         _splineAnimate = GetComponent<SplineAnimate>();
+
+        lastPosition = transform.position;
     }
     
     void Update()
     {
-        _splineAnimate.MaxSpeed += _acceleration * Time.deltaTime * _bonusSpeed;
+        if (_bonusSpeedEnabled)
+            _splineAnimate.MaxSpeed += _acceleration * Time.deltaTime * _bonusSpeed;
+        else _splineAnimate.MaxSpeed += _acceleration * Time.deltaTime;
+        float horizontalSpeed, verticalSpeed;
+
+        ComputeVelocity(out horizontalSpeed, out verticalSpeed);
+
+        if (horizontalSpeed > verticalSpeed)
+        {
+            _upCollision.enabled = false;
+            _rightCollision.enabled = true;
+        }
+        else
+        {
+            _upCollision.enabled = true;
+            _rightCollision.enabled = false;
+        }
+    }
+
+    private void ComputeVelocity(out float horizontalSpeed, out float verticalSpeed)
+    {
+        Vector3 currentPosition = transform.position;
+
+        Vector3 displacement = currentPosition - lastPosition;
+
+        horizontalSpeed = displacement.x / Time.deltaTime;
+        verticalSpeed = displacement.y / Time.deltaTime;
+        lastPosition = currentPosition;
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        print("test");
+        if (collision.gameObject.GetComponent<PlayerController>() != null)
+            _bonusSpeedEnabled = true;
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.gameObject.GetComponent<PlayerController>() != null)
+            _bonusSpeedEnabled = false;
     }
 
     public void RestartCamera()
