@@ -194,13 +194,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 92e21a679fa659e46bea259b8a5bab21, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _speed: 5
+  _speed: 6
   _rigidbody: {fileID: 2201385154641240266}
-  _jumpForce: 5
-  _numberOfJumps: 1
-  _minTimerBetweenJumps: 0.2
+  _jumpForce: 7
+  _maxNumbOFJump: 2
+  _minTimerBetweenJumps: 0
+  _layerMask:
+    serializedVersion: 2
+    m_Bits: 64
   _spawnPoint: {fileID: 0}
   _gravityMultiplier: 1
+  IsGrounded: 0
 --- !u!114 &4602121063684165752
 MonoBehaviour:
   m_ObjectHideFlags: 0
