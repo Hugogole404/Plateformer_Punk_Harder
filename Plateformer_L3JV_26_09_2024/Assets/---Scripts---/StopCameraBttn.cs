@@ -8,15 +8,23 @@ public class StopCameraBttn : MonoBehaviour
     [SerializeField] float _saveSplineSpeed;
     [SerializeField] float _timer;
 
+    [SerializeField] Sprite _activatedSprite;
+
     [SerializeField] GameObject _mainCamera;
+
+    Sprite _oldSprite;
+    SpriteRenderer _actualSprite;
     SplineAnimate _splineAnimate;
 
     bool _isStopping = false;
     bool _isWaiting = true;
 
+
     private void Start()
     {
         _splineAnimate = _mainCamera.GetComponent<SplineAnimate>();
+        _actualSprite = gameObject.GetComponent<SpriteRenderer>();
+        _oldSprite = _actualSprite.sprite;
     }
 
     private void Update()
@@ -25,6 +33,7 @@ public class StopCameraBttn : MonoBehaviour
         {
             _splineAnimate.ElapsedTime -= Time.deltaTime;
             _splineAnimate.MaxSpeed = _saveSplineSpeed;
+            _actualSprite.sprite = _activatedSprite;
         }
 
         if (_isWaiting)
@@ -34,6 +43,7 @@ public class StopCameraBttn : MonoBehaviour
         if (_timer > 3)
         {
             _isStopping = false;
+            _actualSprite.sprite = _oldSprite;
         }
     }
 
