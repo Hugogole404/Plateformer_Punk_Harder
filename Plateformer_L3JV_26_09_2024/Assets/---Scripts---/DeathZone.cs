@@ -6,7 +6,7 @@ public class DeathZone : MonoBehaviour
 {
     [SerializeField] Camera _mainCamera;
     [SerializeField] Score _score;
-    //[SerializeField] GameObject _spawnerBallFaker;
+    [SerializeField] private TimeScript _timeScript;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -17,6 +17,11 @@ public class DeathZone : MonoBehaviour
             player.ResetCurrentPlateform();
             _mainCamera.GetComponent<CameraScript>().RestartCamera(player);
             _score.ReinitScore();
+            DeathCounterAdd();
         }
+    }
+    private void DeathCounterAdd()
+    {
+        _timeScript.DeathCount +=1;
     }
 }
