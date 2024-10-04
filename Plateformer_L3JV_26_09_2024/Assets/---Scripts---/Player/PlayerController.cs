@@ -28,6 +28,9 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private Animator _animator;
     [SerializeField] private float _maxSpeedIdle;
     [SerializeField] private float _maxSpeedWalk;
+    [Header("Lock Control When Intro")]
+    [SerializeField] private float _maxTimerLockControls;
+    private float _currentTimerLockControls;
 
     [HideInInspector] public bool IsGrounded;
 
@@ -51,7 +54,9 @@ public class PlayerController : MonoBehaviour
     private void Update()
     {
         _currentTimerBetweenJumps += Time.deltaTime;
+        _currentTimerLockControls += Time.deltaTime;
         CheckSpeedForAnimator();
+        CheckTimerLockControls();
     }
     private void FixedUpdate()
     {
@@ -130,7 +135,7 @@ public class PlayerController : MonoBehaviour
     {
         if (_rigidbody.velocity.magnitude > 0)
         {
-            if(_rigidbody.velocity.magnitude < _maxSpeedIdle)
+            if (_rigidbody.velocity.magnitude < _maxSpeedIdle)
             {
                 _animator.SetBool("IsWalking", false);
                 _animator.SetBool("IsBall", false);
@@ -148,6 +153,18 @@ public class PlayerController : MonoBehaviour
                 _animator.SetBool("IsWalking", false);
                 _animator.SetBool("TransitionBall", false);
             }
+        }
+    }
+    private void CheckTimerLockControls()
+    {
+        if (_currentTimerLockControls <= _maxTimerLockControls)
+        {
+            _rigidbody.transform.position = _spawnPoint.transform.position;
+            _rigidbody.freezeRotation = true;
+        }
+        else
+        {
+            _rigidbody.freezeRotation = false;
         }
     }
 }

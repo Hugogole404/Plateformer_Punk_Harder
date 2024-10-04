@@ -208,6 +208,7 @@ MonoBehaviour:
   _animator: {fileID: 5108269393214918971}
   _maxSpeedIdle: 0.2
   _maxSpeedWalk: 2
+  _maxTimerLockControls: 6.5
   IsGrounded: 0
 --- !u!114 &4602121063684165752
 MonoBehaviour:
