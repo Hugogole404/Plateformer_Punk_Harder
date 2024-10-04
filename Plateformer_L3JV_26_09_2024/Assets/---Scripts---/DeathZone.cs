@@ -5,6 +5,7 @@ using UnityEngine;
 public class DeathZone : MonoBehaviour
 {
     [SerializeField] Camera _mainCamera;
+    [SerializeField] Score _score;
     //[SerializeField] GameObject _spawnerBallFaker;
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -15,6 +16,7 @@ public class DeathZone : MonoBehaviour
             player.TeleportPlayerToSpawnPoint();
             player.ResetCurrentPlateform();
             _mainCamera.GetComponent<CameraScript>().RestartCamera(player);
+            _score.ReinitScore();
         }
     }
 }

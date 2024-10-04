@@ -25,4 +25,9 @@ public class Score : MonoBehaviour
     {
         AudioSourceBumpers.clip = clip;
     }
+    public void ReinitScore()
+    {
+        _actualScore = 0;
+        _textScore.text = $"Score : {_actualScore}";
+    }
 }
