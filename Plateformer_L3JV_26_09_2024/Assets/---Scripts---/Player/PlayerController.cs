@@ -1,13 +1,6 @@
-using System.Collections;
-using System.Collections.Generic;
-using System.Runtime.InteropServices;
-using TMPro;
-using Unity.VisualScripting;
-using UnityEditor.Rendering;
-using UnityEditorInternal;
 using UnityEngine;
 using UnityEngine.InputSystem;
-using UnityEngine.Serialization;
+using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
@@ -31,6 +24,8 @@ public class PlayerController : MonoBehaviour
     [Header("Lock Control When Intro")]
     [SerializeField] private float _maxTimerLockControls;
     private float _currentTimerLockControls;
+    [Header("Back menu")]
+    [SerializeField] private string _sceneName;
 
     [HideInInspector] public bool IsGrounded;
 
@@ -79,6 +74,11 @@ public class PlayerController : MonoBehaviour
     public void Move(InputAction.CallbackContext context)
     {
         _inputs = context.ReadValue<Vector2>();
+    }  
+    public void EscapeMenu(InputAction.CallbackContext context)
+    {
+        if (!context.performed) return;
+        SceneManager.LoadScene($"{_sceneName}");
     }
     public void Jump(InputAction.CallbackContext context)
     {
