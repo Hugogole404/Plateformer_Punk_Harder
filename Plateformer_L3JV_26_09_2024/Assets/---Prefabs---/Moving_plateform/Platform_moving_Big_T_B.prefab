@@ -78,7 +78,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 3.89, y: 0.96}
+  m_Size: {x: 4.27, y: 1.35}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -231,14 +231,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _distanceX: 0
   _distanceY: -1
-  _AnimationTime: 3
-  circle: 1
+  _animationTime: 3
+  _circle: 1
   OffsetX: 0
   OffsetY: 0
-  PosX: 0
-  PosY: 0
-  NextPosX: 0
-  NextPosY: 0
   OffsetPlatX: 0
   OffsetPlatY: 0
 --- !u!114 &3097772978779411747

@@ -147,10 +147,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _distanceX: 1
   _distanceY: 0
-  _AnimationTime: 3
-  circle: 0
+  _animationTime: 3
+  _circle: 0
   OffsetX: 0
   OffsetY: 0
+  OffsetPlatX: 0
+  OffsetPlatY: 0
 --- !u!114 &3949310266605158132
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -244,7 +246,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 3.89, y: 0.96}
+  m_Size: {x: 4.27, y: 1.35}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
