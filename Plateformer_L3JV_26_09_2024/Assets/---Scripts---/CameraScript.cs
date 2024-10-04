@@ -80,7 +80,7 @@ public class CameraScript : MonoBehaviour
         else
         {
             _splineAnimate.ElapsedTime = 0;
-            _splineAnimate.MaxSpeed = 0;
+            _splineAnimate.MaxSpeed = 0.5f;
         }
     }
 }
