@@ -290,7 +290,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 28, y: -173}
+  m_AnchoredPosition: {x: 28, y: -145}
   m_SizeDelta: {x: 546.4, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1865583035052999000
@@ -424,7 +424,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 28, y: -228}
+  m_AnchoredPosition: {x: 28, y: -200}
   m_SizeDelta: {x: 546.4, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2546491021938218023
@@ -558,7 +558,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 28, y: -62}
+  m_AnchoredPosition: {x: 28, y: -91}
   m_SizeDelta: {x: 546.4, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4170395872802923826
@@ -808,7 +808,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &5718622236915247397
 RectTransform:
   m_ObjectHideFlags: 0
@@ -887,7 +887,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 28, y: -267}
+  m_AnchoredPosition: {x: 28, y: -239}
   m_SizeDelta: {x: 546.4, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &6817497632401316350
@@ -1021,7 +1021,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 28, y: -118}
+  m_AnchoredPosition: {x: 28, y: -293}
   m_SizeDelta: {x: 546.4, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7192444928916326426
@@ -1052,7 +1052,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'TOTAL SCORE: 000000'
+  m_text: 'FINAL SCORE : 000000'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 306b9cbd388c1fb4b9e061469603f6b6, type: 2}
   m_sharedMaterial: {fileID: 4821847984910817305, guid: 306b9cbd388c1fb4b9e061469603f6b6, type: 2}

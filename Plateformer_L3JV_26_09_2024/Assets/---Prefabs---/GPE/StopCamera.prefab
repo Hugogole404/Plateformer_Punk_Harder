@@ -145,6 +145,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _saveSplineSpeed: 0
   _timer: 0
-  _activatedSprite: {fileID: 0}
+  _activatedSprite: {fileID: 21300000, guid: 7af0e5640331d5e4c90b66f7ca65c52e, type: 3}
   _mainCamera: {fileID: 0}
   _listFeedBackStopCam: []
