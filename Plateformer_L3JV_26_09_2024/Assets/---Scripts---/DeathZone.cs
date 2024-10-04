@@ -17,7 +17,7 @@ public class DeathZone : MonoBehaviour
             player.ResetCurrentPlateform();
             _mainCamera.GetComponent<CameraScript>().RestartCamera(player);
             _score.ReinitScore();
-            DeathCounterAdd();
+            //DeathCounterAdd();
         }
     }
     private void DeathCounterAdd()
