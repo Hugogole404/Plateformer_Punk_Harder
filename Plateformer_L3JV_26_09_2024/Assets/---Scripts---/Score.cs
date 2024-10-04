@@ -11,12 +11,12 @@ public class Score : MonoBehaviour
     public int DeathCount;
 
     [Header("Bumpers")]
-    private int _actualScore;
+    public int ActualScore;
 
     public void AddScoreBumpers(int givenScore)
     {
-        _actualScore += givenScore;
-        _textScore.text = $"Score : {_actualScore}";
+        ActualScore += givenScore;
+        _textScore.text = $"Score : {ActualScore}";
     }
     public void PlaySound()
     {
@@ -28,7 +28,7 @@ public class Score : MonoBehaviour
     }
     public void ReinitScore()
     {
-        _actualScore = 0;
-        _textScore.text = $"Score : {_actualScore}";
+        ActualScore = 0;
+        _textScore.text = $"Score : {ActualScore}";
     }
 }
