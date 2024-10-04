@@ -7,6 +7,7 @@ public class Bumper : MonoBehaviour
     [Header("Score")]
     [SerializeField] Score _score;
     [SerializeField] float _maxTimerBetweenGetScore;
+    [SerializeField] int _scoreGiven;
     [Header("Sounds")]
     [SerializeField] AudioClip _sound;
     [Header("Sprite changes")]
@@ -41,7 +42,7 @@ public class Bumper : MonoBehaviour
             _thisGO.transform.DOPunchScale(new Vector3(0.5f, 0.5f, 0), 0.3f, 2, 0.3f);
             if (!_canTimer)
             {
-                _score.AddScoreBumpers();
+                _score.AddScoreBumpers(_scoreGiven);
 
                 _score.GetSound(_sound);
                 _score.PlaySound();

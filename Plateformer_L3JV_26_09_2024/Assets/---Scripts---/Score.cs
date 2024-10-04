@@ -10,12 +10,11 @@ public class Score : MonoBehaviour
     [SerializeField] private TextMeshProUGUI _textScore;
 
     [Header("Bumpers")]
-    [SerializeField] private int _scoreGivenBumpers;
     private int _actualScore;
 
-    public void AddScoreBumpers()
+    public void AddScoreBumpers(int givenScore)
     {
-        _actualScore += _scoreGivenBumpers;
+        _actualScore += givenScore;
         _textScore.text = $"Score : {_actualScore}";
     }
     public void PlaySound()
