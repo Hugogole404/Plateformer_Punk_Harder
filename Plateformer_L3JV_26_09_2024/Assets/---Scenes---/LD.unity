@@ -1836,6 +1836,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 713860262}
     m_Modifications:
     - target: {fileID: 2824482266317249560, guid: 45bdd33ccee4fae439db6fe8faf2c271, type: 3}
+      propertyPath: _score
+      value: 
+      objectReference: {fileID: 2030965710}
+    - target: {fileID: 2824482266317249560, guid: 45bdd33ccee4fae439db6fe8faf2c271, type: 3}
       propertyPath: _mainCamera
       value: 
       objectReference: {fileID: 1989225786}
@@ -5981,6 +5985,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 713860262}
     m_Modifications:
+    - target: {fileID: 2824482266317249560, guid: 45bdd33ccee4fae439db6fe8faf2c271, type: 3}
+      propertyPath: _score
+      value: 
+      objectReference: {fileID: 2030965710}
     - target: {fileID: 2824482266317249560, guid: 45bdd33ccee4fae439db6fe8faf2c271, type: 3}
       propertyPath: _mainCamera
       value: 
@@ -10451,6 +10459,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 713860262}
     m_Modifications:
     - target: {fileID: 2824482266317249560, guid: 45bdd33ccee4fae439db6fe8faf2c271, type: 3}
+      propertyPath: _score
+      value: 
+      objectReference: {fileID: 2030965710}
+    - target: {fileID: 2824482266317249560, guid: 45bdd33ccee4fae439db6fe8faf2c271, type: 3}
       propertyPath: _mainCamera
       value: 
       objectReference: {fileID: 1989225786}
@@ -12132,6 +12144,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 713860262}
     m_Modifications:
     - target: {fileID: 2824482266317249560, guid: 45bdd33ccee4fae439db6fe8faf2c271, type: 3}
+      propertyPath: _score
+      value: 
+      objectReference: {fileID: 2030965710}
+    - target: {fileID: 2824482266317249560, guid: 45bdd33ccee4fae439db6fe8faf2c271, type: 3}
       propertyPath: _mainCamera
       value: 
       objectReference: {fileID: 1989225786}
@@ -12770,6 +12786,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 713860262}
     m_Modifications:
+    - target: {fileID: 2824482266317249560, guid: 45bdd33ccee4fae439db6fe8faf2c271, type: 3}
+      propertyPath: _score
+      value: 
+      objectReference: {fileID: 2030965710}
     - target: {fileID: 2824482266317249560, guid: 45bdd33ccee4fae439db6fe8faf2c271, type: 3}
       propertyPath: _mainCamera
       value: 
@@ -17260,6 +17280,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2546793810169328, guid: 5379cd2d8c806a3489d7324f08350b8e, type: 3}
+      propertyPath: _score
+      value: 
+      objectReference: {fileID: 2030965710}
     - target: {fileID: 9775349155103333, guid: 5379cd2d8c806a3489d7324f08350b8e, type: 3}
       propertyPath: m_Size.y
       value: 8.61327
@@ -17282,7 +17306,7 @@ PrefabInstance:
       objectReference: {fileID: 1381173851}
     - target: {fileID: 187301496725300380, guid: 5379cd2d8c806a3489d7324f08350b8e, type: 3}
       propertyPath: m_Duration
-      value: 271.1898
+      value: 276.20526
       objectReference: {fileID: 0}
     - target: {fileID: 187301496725300380, guid: 5379cd2d8c806a3489d7324f08350b8e, type: 3}
       propertyPath: m_MaxSpeed
@@ -17316,6 +17340,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2044108861340057085, guid: 5379cd2d8c806a3489d7324f08350b8e, type: 3}
+      propertyPath: _score
+      value: 
+      objectReference: {fileID: 2030965710}
     - target: {fileID: 2056128780793642207, guid: 5379cd2d8c806a3489d7324f08350b8e, type: 3}
       propertyPath: m_LocalPosition.x
       value: -1.1
@@ -17420,6 +17448,10 @@ PrefabInstance:
       propertyPath: m_Offset.x
       value: 6.96
       objectReference: {fileID: 0}
+    - target: {fileID: 5697304425433871815, guid: 5379cd2d8c806a3489d7324f08350b8e, type: 3}
+      propertyPath: _score
+      value: 
+      objectReference: {fileID: 2030965710}
     - target: {fileID: 6376848944599444441, guid: 5379cd2d8c806a3489d7324f08350b8e, type: 3}
       propertyPath: m_Color.a
       value: 0.03529412
@@ -17452,6 +17484,10 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: -6.88
       objectReference: {fileID: 0}
+    - target: {fileID: 8553037333428400493, guid: 5379cd2d8c806a3489d7324f08350b8e, type: 3}
+      propertyPath: _score
+      value: 
+      objectReference: {fileID: 2030965710}
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: 610428563253869503, guid: 5379cd2d8c806a3489d7324f08350b8e, type: 3}
@@ -19133,6 +19169,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 2824482266317249560, guid: 45bdd33ccee4fae439db6fe8faf2c271, type: 3}
+      propertyPath: _score
+      value: 
+      objectReference: {fileID: 2030965710}
+    - target: {fileID: 2824482266317249560, guid: 45bdd33ccee4fae439db6fe8faf2c271, type: 3}
       propertyPath: _mainCamera
       value: 
       objectReference: {fileID: 1989225786}
@@ -19820,6 +19860,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 713860262}
     m_Modifications:
+    - target: {fileID: 2824482266317249560, guid: 45bdd33ccee4fae439db6fe8faf2c271, type: 3}
+      propertyPath: _score
+      value: 
+      objectReference: {fileID: 2030965710}
     - target: {fileID: 2824482266317249560, guid: 45bdd33ccee4fae439db6fe8faf2c271, type: 3}
       propertyPath: _mainCamera
       value: 
@@ -21316,6 +21360,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 713860262}
     m_Modifications:
+    - target: {fileID: 2824482266317249560, guid: 45bdd33ccee4fae439db6fe8faf2c271, type: 3}
+      propertyPath: _score
+      value: 
+      objectReference: {fileID: 2030965710}
     - target: {fileID: 2824482266317249560, guid: 45bdd33ccee4fae439db6fe8faf2c271, type: 3}
       propertyPath: _mainCamera
       value: 
@@ -24474,6 +24522,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 713860262}
     m_Modifications:
+    - target: {fileID: 2824482266317249560, guid: 45bdd33ccee4fae439db6fe8faf2c271, type: 3}
+      propertyPath: _score
+      value: 
+      objectReference: {fileID: 2030965710}
     - target: {fileID: 2824482266317249560, guid: 45bdd33ccee4fae439db6fe8faf2c271, type: 3}
       propertyPath: _mainCamera
       value: 
