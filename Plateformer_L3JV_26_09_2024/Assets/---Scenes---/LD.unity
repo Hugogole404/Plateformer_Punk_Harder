@@ -130,6 +130,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1393734646}
     m_Modifications:
+    - target: {fileID: 1933512110333617217, guid: c81f2a54982a05e41a9c3297bbf2a13f, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 4b84d4a6ea5345b49863b064a41a5f11, type: 3}
     - target: {fileID: 2462585802389066436, guid: c81f2a54982a05e41a9c3297bbf2a13f, type: 3}
       propertyPath: _score
       value: 
@@ -142,6 +146,14 @@ PrefabInstance:
       propertyPath: _thisGO
       value: 
       objectReference: {fileID: 1788033961}
+    - target: {fileID: 2462585802389066436, guid: c81f2a54982a05e41a9c3297bbf2a13f, type: 3}
+      propertyPath: _scoreGiven
+      value: 200
+      objectReference: {fileID: 0}
+    - target: {fileID: 2462585802389066436, guid: c81f2a54982a05e41a9c3297bbf2a13f, type: 3}
+      propertyPath: _spriteWhenTouched
+      value: 
+      objectReference: {fileID: 21300000, guid: 0204ed82eca6f25488a9d3fcf8da45cb, type: 3}
     - target: {fileID: 2462585802389066436, guid: c81f2a54982a05e41a9c3297bbf2a13f, type: 3}
       propertyPath: _maxTimerChangeSprite
       value: 0.2
@@ -299,6 +311,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 476478521}
     m_Modifications:
+    - target: {fileID: 1933512110333617217, guid: c81f2a54982a05e41a9c3297bbf2a13f, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 248897d84f723ae4dbfc09b116784758, type: 3}
     - target: {fileID: 2462585802389066436, guid: c81f2a54982a05e41a9c3297bbf2a13f, type: 3}
       propertyPath: _score
       value: 
@@ -311,6 +327,14 @@ PrefabInstance:
       propertyPath: _thisGO
       value: 
       objectReference: {fileID: 28537056}
+    - target: {fileID: 2462585802389066436, guid: c81f2a54982a05e41a9c3297bbf2a13f, type: 3}
+      propertyPath: _scoreGiven
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 2462585802389066436, guid: c81f2a54982a05e41a9c3297bbf2a13f, type: 3}
+      propertyPath: _spriteWhenTouched
+      value: 
+      objectReference: {fileID: 21300000, guid: 1479893223beaf94490a7243bffa8a45, type: 3}
     - target: {fileID: 2462585802389066436, guid: c81f2a54982a05e41a9c3297bbf2a13f, type: 3}
       propertyPath: _maxTimerChangeSprite
       value: 0.2
@@ -382,6 +406,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2058428281}
     m_Modifications:
+    - target: {fileID: 1933512110333617217, guid: c81f2a54982a05e41a9c3297bbf2a13f, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 4b84d4a6ea5345b49863b064a41a5f11, type: 3}
     - target: {fileID: 2462585802389066436, guid: c81f2a54982a05e41a9c3297bbf2a13f, type: 3}
       propertyPath: _score
       value: 
@@ -394,6 +422,14 @@ PrefabInstance:
       propertyPath: _thisGO
       value: 
       objectReference: {fileID: 28607608}
+    - target: {fileID: 2462585802389066436, guid: c81f2a54982a05e41a9c3297bbf2a13f, type: 3}
+      propertyPath: _scoreGiven
+      value: 200
+      objectReference: {fileID: 0}
+    - target: {fileID: 2462585802389066436, guid: c81f2a54982a05e41a9c3297bbf2a13f, type: 3}
+      propertyPath: _spriteWhenTouched
+      value: 
+      objectReference: {fileID: 21300000, guid: 0204ed82eca6f25488a9d3fcf8da45cb, type: 3}
     - target: {fileID: 2462585802389066436, guid: c81f2a54982a05e41a9c3297bbf2a13f, type: 3}
       propertyPath: _maxTimerChangeSprite
       value: 0.2
@@ -1645,6 +1681,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 476478521}
     m_Modifications:
+    - target: {fileID: 1933512110333617217, guid: c81f2a54982a05e41a9c3297bbf2a13f, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 4b84d4a6ea5345b49863b064a41a5f11, type: 3}
     - target: {fileID: 2462585802389066436, guid: c81f2a54982a05e41a9c3297bbf2a13f, type: 3}
       propertyPath: _score
       value: 
@@ -1657,6 +1697,14 @@ PrefabInstance:
       propertyPath: _thisGO
       value: 
       objectReference: {fileID: 158468356}
+    - target: {fileID: 2462585802389066436, guid: c81f2a54982a05e41a9c3297bbf2a13f, type: 3}
+      propertyPath: _scoreGiven
+      value: 200
+      objectReference: {fileID: 0}
+    - target: {fileID: 2462585802389066436, guid: c81f2a54982a05e41a9c3297bbf2a13f, type: 3}
+      propertyPath: _spriteWhenTouched
+      value: 
+      objectReference: {fileID: 21300000, guid: 0204ed82eca6f25488a9d3fcf8da45cb, type: 3}
     - target: {fileID: 2462585802389066436, guid: c81f2a54982a05e41a9c3297bbf2a13f, type: 3}
       propertyPath: _maxTimerChangeSprite
       value: 0.2
@@ -3321,6 +3369,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1393734646}
     m_Modifications:
+    - target: {fileID: 1933512110333617217, guid: c81f2a54982a05e41a9c3297bbf2a13f, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 4b84d4a6ea5345b49863b064a41a5f11, type: 3}
     - target: {fileID: 2462585802389066436, guid: c81f2a54982a05e41a9c3297bbf2a13f, type: 3}
       propertyPath: _score
       value: 
@@ -3333,6 +3385,14 @@ PrefabInstance:
       propertyPath: _thisGO
       value: 
       objectReference: {fileID: 173095358}
+    - target: {fileID: 2462585802389066436, guid: c81f2a54982a05e41a9c3297bbf2a13f, type: 3}
+      propertyPath: _scoreGiven
+      value: 200
+      objectReference: {fileID: 0}
+    - target: {fileID: 2462585802389066436, guid: c81f2a54982a05e41a9c3297bbf2a13f, type: 3}
+      propertyPath: _spriteWhenTouched
+      value: 
+      objectReference: {fileID: 21300000, guid: 0204ed82eca6f25488a9d3fcf8da45cb, type: 3}
     - target: {fileID: 2462585802389066436, guid: c81f2a54982a05e41a9c3297bbf2a13f, type: 3}
       propertyPath: _maxTimerChangeSprite
       value: 0.2
@@ -3660,6 +3720,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1393734646}
     m_Modifications:
+    - target: {fileID: 1933512110333617217, guid: c81f2a54982a05e41a9c3297bbf2a13f, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 248897d84f723ae4dbfc09b116784758, type: 3}
     - target: {fileID: 2462585802389066436, guid: c81f2a54982a05e41a9c3297bbf2a13f, type: 3}
       propertyPath: _score
       value: 
@@ -3672,6 +3736,14 @@ PrefabInstance:
       propertyPath: _thisGO
       value: 
       objectReference: {fileID: 351131074}
+    - target: {fileID: 2462585802389066436, guid: c81f2a54982a05e41a9c3297bbf2a13f, type: 3}
+      propertyPath: _scoreGiven
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 2462585802389066436, guid: c81f2a54982a05e41a9c3297bbf2a13f, type: 3}
+      propertyPath: _spriteWhenTouched
+      value: 
+      objectReference: {fileID: 21300000, guid: 1479893223beaf94490a7243bffa8a45, type: 3}
     - target: {fileID: 2462585802389066436, guid: c81f2a54982a05e41a9c3297bbf2a13f, type: 3}
       propertyPath: _maxTimerChangeSprite
       value: 0.2
@@ -3820,6 +3892,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 476478521}
     m_Modifications:
+    - target: {fileID: 1933512110333617217, guid: c81f2a54982a05e41a9c3297bbf2a13f, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 248897d84f723ae4dbfc09b116784758, type: 3}
     - target: {fileID: 2462585802389066436, guid: c81f2a54982a05e41a9c3297bbf2a13f, type: 3}
       propertyPath: _score
       value: 
@@ -3832,6 +3908,14 @@ PrefabInstance:
       propertyPath: _thisGO
       value: 
       objectReference: {fileID: 431890827}
+    - target: {fileID: 2462585802389066436, guid: c81f2a54982a05e41a9c3297bbf2a13f, type: 3}
+      propertyPath: _scoreGiven
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 2462585802389066436, guid: c81f2a54982a05e41a9c3297bbf2a13f, type: 3}
+      propertyPath: _spriteWhenTouched
+      value: 
+      objectReference: {fileID: 21300000, guid: 1479893223beaf94490a7243bffa8a45, type: 3}
     - target: {fileID: 2462585802389066436, guid: c81f2a54982a05e41a9c3297bbf2a13f, type: 3}
       propertyPath: _maxTimerChangeSprite
       value: 0.2
@@ -4840,6 +4924,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1393734646}
     m_Modifications:
+    - target: {fileID: 1933512110333617217, guid: c81f2a54982a05e41a9c3297bbf2a13f, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 248897d84f723ae4dbfc09b116784758, type: 3}
     - target: {fileID: 2462585802389066436, guid: c81f2a54982a05e41a9c3297bbf2a13f, type: 3}
       propertyPath: _score
       value: 
@@ -4852,6 +4940,14 @@ PrefabInstance:
       propertyPath: _thisGO
       value: 
       objectReference: {fileID: 449416933}
+    - target: {fileID: 2462585802389066436, guid: c81f2a54982a05e41a9c3297bbf2a13f, type: 3}
+      propertyPath: _scoreGiven
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 2462585802389066436, guid: c81f2a54982a05e41a9c3297bbf2a13f, type: 3}
+      propertyPath: _spriteWhenTouched
+      value: 
+      objectReference: {fileID: 21300000, guid: 1479893223beaf94490a7243bffa8a45, type: 3}
     - target: {fileID: 2462585802389066436, guid: c81f2a54982a05e41a9c3297bbf2a13f, type: 3}
       propertyPath: _maxTimerChangeSprite
       value: 0.2
@@ -5019,6 +5115,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2040976627}
     m_Modifications:
+    - target: {fileID: 1933512110333617217, guid: c81f2a54982a05e41a9c3297bbf2a13f, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 248897d84f723ae4dbfc09b116784758, type: 3}
     - target: {fileID: 2462585802389066436, guid: c81f2a54982a05e41a9c3297bbf2a13f, type: 3}
       propertyPath: _score
       value: 
@@ -5031,6 +5131,14 @@ PrefabInstance:
       propertyPath: _thisGO
       value: 
       objectReference: {fileID: 461725133}
+    - target: {fileID: 2462585802389066436, guid: c81f2a54982a05e41a9c3297bbf2a13f, type: 3}
+      propertyPath: _scoreGiven
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 2462585802389066436, guid: c81f2a54982a05e41a9c3297bbf2a13f, type: 3}
+      propertyPath: _spriteWhenTouched
+      value: 
+      objectReference: {fileID: 21300000, guid: 1479893223beaf94490a7243bffa8a45, type: 3}
     - target: {fileID: 2462585802389066436, guid: c81f2a54982a05e41a9c3297bbf2a13f, type: 3}
       propertyPath: _maxTimerChangeSprite
       value: 0.2
@@ -5121,6 +5229,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2058428281}
     m_Modifications:
+    - target: {fileID: 1933512110333617217, guid: c81f2a54982a05e41a9c3297bbf2a13f, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 248897d84f723ae4dbfc09b116784758, type: 3}
     - target: {fileID: 2462585802389066436, guid: c81f2a54982a05e41a9c3297bbf2a13f, type: 3}
       propertyPath: _score
       value: 
@@ -5133,6 +5245,14 @@ PrefabInstance:
       propertyPath: _thisGO
       value: 
       objectReference: {fileID: 462445971}
+    - target: {fileID: 2462585802389066436, guid: c81f2a54982a05e41a9c3297bbf2a13f, type: 3}
+      propertyPath: _scoreGiven
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 2462585802389066436, guid: c81f2a54982a05e41a9c3297bbf2a13f, type: 3}
+      propertyPath: _spriteWhenTouched
+      value: 
+      objectReference: {fileID: 21300000, guid: 1479893223beaf94490a7243bffa8a45, type: 3}
     - target: {fileID: 2462585802389066436, guid: c81f2a54982a05e41a9c3297bbf2a13f, type: 3}
       propertyPath: _maxTimerChangeSprite
       value: 0.2
@@ -5422,6 +5542,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 476478521}
     m_Modifications:
+    - target: {fileID: 1933512110333617217, guid: c81f2a54982a05e41a9c3297bbf2a13f, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 248897d84f723ae4dbfc09b116784758, type: 3}
     - target: {fileID: 2462585802389066436, guid: c81f2a54982a05e41a9c3297bbf2a13f, type: 3}
       propertyPath: _score
       value: 
@@ -5434,6 +5558,14 @@ PrefabInstance:
       propertyPath: _thisGO
       value: 
       objectReference: {fileID: 475557584}
+    - target: {fileID: 2462585802389066436, guid: c81f2a54982a05e41a9c3297bbf2a13f, type: 3}
+      propertyPath: _scoreGiven
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 2462585802389066436, guid: c81f2a54982a05e41a9c3297bbf2a13f, type: 3}
+      propertyPath: _spriteWhenTouched
+      value: 
+      objectReference: {fileID: 21300000, guid: 1479893223beaf94490a7243bffa8a45, type: 3}
     - target: {fileID: 2462585802389066436, guid: c81f2a54982a05e41a9c3297bbf2a13f, type: 3}
       propertyPath: _maxTimerChangeSprite
       value: 0.2
@@ -7124,6 +7256,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 476478521}
     m_Modifications:
+    - target: {fileID: 1933512110333617217, guid: c81f2a54982a05e41a9c3297bbf2a13f, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 248897d84f723ae4dbfc09b116784758, type: 3}
     - target: {fileID: 2462585802389066436, guid: c81f2a54982a05e41a9c3297bbf2a13f, type: 3}
       propertyPath: _score
       value: 
@@ -7136,6 +7272,14 @@ PrefabInstance:
       propertyPath: _thisGO
       value: 
       objectReference: {fileID: 677648961}
+    - target: {fileID: 2462585802389066436, guid: c81f2a54982a05e41a9c3297bbf2a13f, type: 3}
+      propertyPath: _scoreGiven
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 2462585802389066436, guid: c81f2a54982a05e41a9c3297bbf2a13f, type: 3}
+      propertyPath: _spriteWhenTouched
+      value: 
+      objectReference: {fileID: 21300000, guid: 1479893223beaf94490a7243bffa8a45, type: 3}
     - target: {fileID: 2462585802389066436, guid: c81f2a54982a05e41a9c3297bbf2a13f, type: 3}
       propertyPath: _maxTimerChangeSprite
       value: 0.2
@@ -7562,6 +7706,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2058428281}
     m_Modifications:
+    - target: {fileID: 1933512110333617217, guid: c81f2a54982a05e41a9c3297bbf2a13f, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 248897d84f723ae4dbfc09b116784758, type: 3}
     - target: {fileID: 2462585802389066436, guid: c81f2a54982a05e41a9c3297bbf2a13f, type: 3}
       propertyPath: _score
       value: 
@@ -7574,6 +7722,14 @@ PrefabInstance:
       propertyPath: _thisGO
       value: 
       objectReference: {fileID: 1328601393}
+    - target: {fileID: 2462585802389066436, guid: c81f2a54982a05e41a9c3297bbf2a13f, type: 3}
+      propertyPath: _scoreGiven
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 2462585802389066436, guid: c81f2a54982a05e41a9c3297bbf2a13f, type: 3}
+      propertyPath: _spriteWhenTouched
+      value: 
+      objectReference: {fileID: 21300000, guid: 1479893223beaf94490a7243bffa8a45, type: 3}
     - target: {fileID: 2462585802389066436, guid: c81f2a54982a05e41a9c3297bbf2a13f, type: 3}
       propertyPath: _maxTimerChangeSprite
       value: 0.2
@@ -8590,6 +8746,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2040976627}
     m_Modifications:
+    - target: {fileID: 1933512110333617217, guid: c81f2a54982a05e41a9c3297bbf2a13f, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 248897d84f723ae4dbfc09b116784758, type: 3}
     - target: {fileID: 2462585802389066436, guid: c81f2a54982a05e41a9c3297bbf2a13f, type: 3}
       propertyPath: _score
       value: 
@@ -8602,6 +8762,14 @@ PrefabInstance:
       propertyPath: _thisGO
       value: 
       objectReference: {fileID: 805241805}
+    - target: {fileID: 2462585802389066436, guid: c81f2a54982a05e41a9c3297bbf2a13f, type: 3}
+      propertyPath: _scoreGiven
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 2462585802389066436, guid: c81f2a54982a05e41a9c3297bbf2a13f, type: 3}
+      propertyPath: _spriteWhenTouched
+      value: 
+      objectReference: {fileID: 21300000, guid: 1479893223beaf94490a7243bffa8a45, type: 3}
     - target: {fileID: 2462585802389066436, guid: c81f2a54982a05e41a9c3297bbf2a13f, type: 3}
       propertyPath: _maxTimerChangeSprite
       value: 0.2
@@ -10914,6 +11082,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1393734646}
     m_Modifications:
+    - target: {fileID: 1933512110333617217, guid: c81f2a54982a05e41a9c3297bbf2a13f, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 248897d84f723ae4dbfc09b116784758, type: 3}
     - target: {fileID: 2462585802389066436, guid: c81f2a54982a05e41a9c3297bbf2a13f, type: 3}
       propertyPath: _score
       value: 
@@ -10926,6 +11098,14 @@ PrefabInstance:
       propertyPath: _thisGO
       value: 
       objectReference: {fileID: 1010868669}
+    - target: {fileID: 2462585802389066436, guid: c81f2a54982a05e41a9c3297bbf2a13f, type: 3}
+      propertyPath: _scoreGiven
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 2462585802389066436, guid: c81f2a54982a05e41a9c3297bbf2a13f, type: 3}
+      propertyPath: _spriteWhenTouched
+      value: 
+      objectReference: {fileID: 21300000, guid: 1479893223beaf94490a7243bffa8a45, type: 3}
     - target: {fileID: 2462585802389066436, guid: c81f2a54982a05e41a9c3297bbf2a13f, type: 3}
       propertyPath: _maxTimerChangeSprite
       value: 0.2
@@ -11146,6 +11326,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1393734646}
     m_Modifications:
+    - target: {fileID: 1933512110333617217, guid: c81f2a54982a05e41a9c3297bbf2a13f, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 248897d84f723ae4dbfc09b116784758, type: 3}
     - target: {fileID: 2462585802389066436, guid: c81f2a54982a05e41a9c3297bbf2a13f, type: 3}
       propertyPath: _score
       value: 
@@ -11158,6 +11342,14 @@ PrefabInstance:
       propertyPath: _thisGO
       value: 
       objectReference: {fileID: 1031824880}
+    - target: {fileID: 2462585802389066436, guid: c81f2a54982a05e41a9c3297bbf2a13f, type: 3}
+      propertyPath: _scoreGiven
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 2462585802389066436, guid: c81f2a54982a05e41a9c3297bbf2a13f, type: 3}
+      propertyPath: _spriteWhenTouched
+      value: 
+      objectReference: {fileID: 21300000, guid: 1479893223beaf94490a7243bffa8a45, type: 3}
     - target: {fileID: 2462585802389066436, guid: c81f2a54982a05e41a9c3297bbf2a13f, type: 3}
       propertyPath: _maxTimerChangeSprite
       value: 0.2
@@ -11357,6 +11549,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2058428281}
     m_Modifications:
+    - target: {fileID: 1933512110333617217, guid: c81f2a54982a05e41a9c3297bbf2a13f, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 248897d84f723ae4dbfc09b116784758, type: 3}
     - target: {fileID: 2462585802389066436, guid: c81f2a54982a05e41a9c3297bbf2a13f, type: 3}
       propertyPath: _score
       value: 
@@ -11369,6 +11565,14 @@ PrefabInstance:
       propertyPath: _thisGO
       value: 
       objectReference: {fileID: 1045662884}
+    - target: {fileID: 2462585802389066436, guid: c81f2a54982a05e41a9c3297bbf2a13f, type: 3}
+      propertyPath: _scoreGiven
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 2462585802389066436, guid: c81f2a54982a05e41a9c3297bbf2a13f, type: 3}
+      propertyPath: _spriteWhenTouched
+      value: 
+      objectReference: {fileID: 21300000, guid: 1479893223beaf94490a7243bffa8a45, type: 3}
     - target: {fileID: 2462585802389066436, guid: c81f2a54982a05e41a9c3297bbf2a13f, type: 3}
       propertyPath: _maxTimerChangeSprite
       value: 0.2
@@ -12242,6 +12446,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2040976627}
     m_Modifications:
+    - target: {fileID: 1933512110333617217, guid: c81f2a54982a05e41a9c3297bbf2a13f, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 4b84d4a6ea5345b49863b064a41a5f11, type: 3}
     - target: {fileID: 2462585802389066436, guid: c81f2a54982a05e41a9c3297bbf2a13f, type: 3}
       propertyPath: _score
       value: 
@@ -12254,6 +12462,14 @@ PrefabInstance:
       propertyPath: _thisGO
       value: 
       objectReference: {fileID: 1111985862}
+    - target: {fileID: 2462585802389066436, guid: c81f2a54982a05e41a9c3297bbf2a13f, type: 3}
+      propertyPath: _scoreGiven
+      value: 200
+      objectReference: {fileID: 0}
+    - target: {fileID: 2462585802389066436, guid: c81f2a54982a05e41a9c3297bbf2a13f, type: 3}
+      propertyPath: _spriteWhenTouched
+      value: 
+      objectReference: {fileID: 21300000, guid: 0204ed82eca6f25488a9d3fcf8da45cb, type: 3}
     - target: {fileID: 2462585802389066436, guid: c81f2a54982a05e41a9c3297bbf2a13f, type: 3}
       propertyPath: _maxTimerChangeSprite
       value: 0.2
@@ -12344,6 +12560,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2058428281}
     m_Modifications:
+    - target: {fileID: 1933512110333617217, guid: c81f2a54982a05e41a9c3297bbf2a13f, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 248897d84f723ae4dbfc09b116784758, type: 3}
     - target: {fileID: 2462585802389066436, guid: c81f2a54982a05e41a9c3297bbf2a13f, type: 3}
       propertyPath: _score
       value: 
@@ -12356,6 +12576,14 @@ PrefabInstance:
       propertyPath: _thisGO
       value: 
       objectReference: {fileID: 1114816167}
+    - target: {fileID: 2462585802389066436, guid: c81f2a54982a05e41a9c3297bbf2a13f, type: 3}
+      propertyPath: _scoreGiven
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 2462585802389066436, guid: c81f2a54982a05e41a9c3297bbf2a13f, type: 3}
+      propertyPath: _spriteWhenTouched
+      value: 
+      objectReference: {fileID: 21300000, guid: 1479893223beaf94490a7243bffa8a45, type: 3}
     - target: {fileID: 2462585802389066436, guid: c81f2a54982a05e41a9c3297bbf2a13f, type: 3}
       propertyPath: _maxTimerChangeSprite
       value: 0.2
@@ -13469,6 +13697,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2058428281}
     m_Modifications:
+    - target: {fileID: 1933512110333617217, guid: c81f2a54982a05e41a9c3297bbf2a13f, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 248897d84f723ae4dbfc09b116784758, type: 3}
     - target: {fileID: 2462585802389066436, guid: c81f2a54982a05e41a9c3297bbf2a13f, type: 3}
       propertyPath: _score
       value: 
@@ -13481,6 +13713,14 @@ PrefabInstance:
       propertyPath: _thisGO
       value: 
       objectReference: {fileID: 1220354738}
+    - target: {fileID: 2462585802389066436, guid: c81f2a54982a05e41a9c3297bbf2a13f, type: 3}
+      propertyPath: _scoreGiven
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 2462585802389066436, guid: c81f2a54982a05e41a9c3297bbf2a13f, type: 3}
+      propertyPath: _spriteWhenTouched
+      value: 
+      objectReference: {fileID: 21300000, guid: 1479893223beaf94490a7243bffa8a45, type: 3}
     - target: {fileID: 2462585802389066436, guid: c81f2a54982a05e41a9c3297bbf2a13f, type: 3}
       propertyPath: _maxTimerChangeSprite
       value: 0.2
@@ -13758,6 +13998,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2058428281}
     m_Modifications:
+    - target: {fileID: 1933512110333617217, guid: c81f2a54982a05e41a9c3297bbf2a13f, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 4b84d4a6ea5345b49863b064a41a5f11, type: 3}
     - target: {fileID: 2462585802389066436, guid: c81f2a54982a05e41a9c3297bbf2a13f, type: 3}
       propertyPath: _score
       value: 
@@ -13770,6 +14014,14 @@ PrefabInstance:
       propertyPath: _thisGO
       value: 
       objectReference: {fileID: 1234734055}
+    - target: {fileID: 2462585802389066436, guid: c81f2a54982a05e41a9c3297bbf2a13f, type: 3}
+      propertyPath: _scoreGiven
+      value: 200
+      objectReference: {fileID: 0}
+    - target: {fileID: 2462585802389066436, guid: c81f2a54982a05e41a9c3297bbf2a13f, type: 3}
+      propertyPath: _spriteWhenTouched
+      value: 
+      objectReference: {fileID: 21300000, guid: 0204ed82eca6f25488a9d3fcf8da45cb, type: 3}
     - target: {fileID: 2462585802389066436, guid: c81f2a54982a05e41a9c3297bbf2a13f, type: 3}
       propertyPath: _maxTimerChangeSprite
       value: 0.2
@@ -13933,6 +14185,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2040976627}
     m_Modifications:
+    - target: {fileID: 1933512110333617217, guid: c81f2a54982a05e41a9c3297bbf2a13f, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 4b84d4a6ea5345b49863b064a41a5f11, type: 3}
     - target: {fileID: 2462585802389066436, guid: c81f2a54982a05e41a9c3297bbf2a13f, type: 3}
       propertyPath: _score
       value: 
@@ -13945,6 +14201,14 @@ PrefabInstance:
       propertyPath: _thisGO
       value: 
       objectReference: {fileID: 1239554553}
+    - target: {fileID: 2462585802389066436, guid: c81f2a54982a05e41a9c3297bbf2a13f, type: 3}
+      propertyPath: _scoreGiven
+      value: 200
+      objectReference: {fileID: 0}
+    - target: {fileID: 2462585802389066436, guid: c81f2a54982a05e41a9c3297bbf2a13f, type: 3}
+      propertyPath: _spriteWhenTouched
+      value: 
+      objectReference: {fileID: 21300000, guid: 0204ed82eca6f25488a9d3fcf8da45cb, type: 3}
     - target: {fileID: 2462585802389066436, guid: c81f2a54982a05e41a9c3297bbf2a13f, type: 3}
       propertyPath: _maxTimerChangeSprite
       value: 0.2
@@ -14574,6 +14838,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 476478521}
     m_Modifications:
+    - target: {fileID: 1933512110333617217, guid: c81f2a54982a05e41a9c3297bbf2a13f, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 248897d84f723ae4dbfc09b116784758, type: 3}
     - target: {fileID: 2462585802389066436, guid: c81f2a54982a05e41a9c3297bbf2a13f, type: 3}
       propertyPath: _score
       value: 
@@ -14586,6 +14854,14 @@ PrefabInstance:
       propertyPath: _thisGO
       value: 
       objectReference: {fileID: 1277682737}
+    - target: {fileID: 2462585802389066436, guid: c81f2a54982a05e41a9c3297bbf2a13f, type: 3}
+      propertyPath: _scoreGiven
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 2462585802389066436, guid: c81f2a54982a05e41a9c3297bbf2a13f, type: 3}
+      propertyPath: _spriteWhenTouched
+      value: 
+      objectReference: {fileID: 21300000, guid: 1479893223beaf94490a7243bffa8a45, type: 3}
     - target: {fileID: 2462585802389066436, guid: c81f2a54982a05e41a9c3297bbf2a13f, type: 3}
       propertyPath: _maxTimerChangeSprite
       value: 0.2
@@ -15440,6 +15716,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2058428281}
     m_Modifications:
+    - target: {fileID: 1933512110333617217, guid: c81f2a54982a05e41a9c3297bbf2a13f, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 248897d84f723ae4dbfc09b116784758, type: 3}
     - target: {fileID: 2462585802389066436, guid: c81f2a54982a05e41a9c3297bbf2a13f, type: 3}
       propertyPath: _score
       value: 
@@ -15452,6 +15732,14 @@ PrefabInstance:
       propertyPath: _thisGO
       value: 
       objectReference: {fileID: 1327185824}
+    - target: {fileID: 2462585802389066436, guid: c81f2a54982a05e41a9c3297bbf2a13f, type: 3}
+      propertyPath: _scoreGiven
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 2462585802389066436, guid: c81f2a54982a05e41a9c3297bbf2a13f, type: 3}
+      propertyPath: _spriteWhenTouched
+      value: 
+      objectReference: {fileID: 21300000, guid: 1479893223beaf94490a7243bffa8a45, type: 3}
     - target: {fileID: 2462585802389066436, guid: c81f2a54982a05e41a9c3297bbf2a13f, type: 3}
       propertyPath: _maxTimerChangeSprite
       value: 0.2
@@ -17527,6 +17815,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 476478521}
     m_Modifications:
+    - target: {fileID: 1933512110333617217, guid: c81f2a54982a05e41a9c3297bbf2a13f, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 248897d84f723ae4dbfc09b116784758, type: 3}
     - target: {fileID: 2462585802389066436, guid: c81f2a54982a05e41a9c3297bbf2a13f, type: 3}
       propertyPath: _score
       value: 
@@ -17539,6 +17831,14 @@ PrefabInstance:
       propertyPath: _thisGO
       value: 
       objectReference: {fileID: 1517233850}
+    - target: {fileID: 2462585802389066436, guid: c81f2a54982a05e41a9c3297bbf2a13f, type: 3}
+      propertyPath: _scoreGiven
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 2462585802389066436, guid: c81f2a54982a05e41a9c3297bbf2a13f, type: 3}
+      propertyPath: _spriteWhenTouched
+      value: 
+      objectReference: {fileID: 21300000, guid: 1479893223beaf94490a7243bffa8a45, type: 3}
     - target: {fileID: 2462585802389066436, guid: c81f2a54982a05e41a9c3297bbf2a13f, type: 3}
       propertyPath: _maxTimerChangeSprite
       value: 0.2
@@ -17610,6 +17910,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 476478521}
     m_Modifications:
+    - target: {fileID: 1933512110333617217, guid: c81f2a54982a05e41a9c3297bbf2a13f, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 4b84d4a6ea5345b49863b064a41a5f11, type: 3}
     - target: {fileID: 2462585802389066436, guid: c81f2a54982a05e41a9c3297bbf2a13f, type: 3}
       propertyPath: _score
       value: 
@@ -17622,6 +17926,14 @@ PrefabInstance:
       propertyPath: _thisGO
       value: 
       objectReference: {fileID: 1517387039}
+    - target: {fileID: 2462585802389066436, guid: c81f2a54982a05e41a9c3297bbf2a13f, type: 3}
+      propertyPath: _scoreGiven
+      value: 200
+      objectReference: {fileID: 0}
+    - target: {fileID: 2462585802389066436, guid: c81f2a54982a05e41a9c3297bbf2a13f, type: 3}
+      propertyPath: _spriteWhenTouched
+      value: 
+      objectReference: {fileID: 21300000, guid: 0204ed82eca6f25488a9d3fcf8da45cb, type: 3}
     - target: {fileID: 2462585802389066436, guid: c81f2a54982a05e41a9c3297bbf2a13f, type: 3}
       propertyPath: _maxTimerChangeSprite
       value: 0.2
@@ -20157,6 +20469,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 476478521}
     m_Modifications:
+    - target: {fileID: 1933512110333617217, guid: c81f2a54982a05e41a9c3297bbf2a13f, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 4b84d4a6ea5345b49863b064a41a5f11, type: 3}
     - target: {fileID: 2462585802389066436, guid: c81f2a54982a05e41a9c3297bbf2a13f, type: 3}
       propertyPath: _score
       value: 
@@ -20169,6 +20485,14 @@ PrefabInstance:
       propertyPath: _thisGO
       value: 
       objectReference: {fileID: 1730282952}
+    - target: {fileID: 2462585802389066436, guid: c81f2a54982a05e41a9c3297bbf2a13f, type: 3}
+      propertyPath: _scoreGiven
+      value: 200
+      objectReference: {fileID: 0}
+    - target: {fileID: 2462585802389066436, guid: c81f2a54982a05e41a9c3297bbf2a13f, type: 3}
+      propertyPath: _spriteWhenTouched
+      value: 
+      objectReference: {fileID: 21300000, guid: 0204ed82eca6f25488a9d3fcf8da45cb, type: 3}
     - target: {fileID: 2462585802389066436, guid: c81f2a54982a05e41a9c3297bbf2a13f, type: 3}
       propertyPath: _maxTimerChangeSprite
       value: 0.2
@@ -20305,6 +20629,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2040976627}
     m_Modifications:
+    - target: {fileID: 1933512110333617217, guid: c81f2a54982a05e41a9c3297bbf2a13f, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 248897d84f723ae4dbfc09b116784758, type: 3}
     - target: {fileID: 2462585802389066436, guid: c81f2a54982a05e41a9c3297bbf2a13f, type: 3}
       propertyPath: _score
       value: 
@@ -20317,6 +20645,14 @@ PrefabInstance:
       propertyPath: _thisGO
       value: 
       objectReference: {fileID: 1731821844}
+    - target: {fileID: 2462585802389066436, guid: c81f2a54982a05e41a9c3297bbf2a13f, type: 3}
+      propertyPath: _scoreGiven
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 2462585802389066436, guid: c81f2a54982a05e41a9c3297bbf2a13f, type: 3}
+      propertyPath: _spriteWhenTouched
+      value: 
+      objectReference: {fileID: 21300000, guid: 1479893223beaf94490a7243bffa8a45, type: 3}
     - target: {fileID: 2462585802389066436, guid: c81f2a54982a05e41a9c3297bbf2a13f, type: 3}
       propertyPath: _maxTimerChangeSprite
       value: 0.2
@@ -20705,6 +21041,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1393734646}
     m_Modifications:
+    - target: {fileID: 1933512110333617217, guid: c81f2a54982a05e41a9c3297bbf2a13f, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 4b84d4a6ea5345b49863b064a41a5f11, type: 3}
     - target: {fileID: 2462585802389066436, guid: c81f2a54982a05e41a9c3297bbf2a13f, type: 3}
       propertyPath: _score
       value: 
@@ -20717,6 +21057,10 @@ PrefabInstance:
       propertyPath: _thisGO
       value: 
       objectReference: {fileID: 1768859667}
+    - target: {fileID: 2462585802389066436, guid: c81f2a54982a05e41a9c3297bbf2a13f, type: 3}
+      propertyPath: _spriteWhenTouched
+      value: 
+      objectReference: {fileID: 21300000, guid: 0204ed82eca6f25488a9d3fcf8da45cb, type: 3}
     - target: {fileID: 2462585802389066436, guid: c81f2a54982a05e41a9c3297bbf2a13f, type: 3}
       propertyPath: _maxTimerChangeSprite
       value: 0.2
@@ -21105,6 +21449,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 476478521}
     m_Modifications:
+    - target: {fileID: 1933512110333617217, guid: c81f2a54982a05e41a9c3297bbf2a13f, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 248897d84f723ae4dbfc09b116784758, type: 3}
     - target: {fileID: 2462585802389066436, guid: c81f2a54982a05e41a9c3297bbf2a13f, type: 3}
       propertyPath: _score
       value: 
@@ -21117,6 +21465,14 @@ PrefabInstance:
       propertyPath: _thisGO
       value: 
       objectReference: {fileID: 1823239347}
+    - target: {fileID: 2462585802389066436, guid: c81f2a54982a05e41a9c3297bbf2a13f, type: 3}
+      propertyPath: _scoreGiven
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 2462585802389066436, guid: c81f2a54982a05e41a9c3297bbf2a13f, type: 3}
+      propertyPath: _spriteWhenTouched
+      value: 
+      objectReference: {fileID: 21300000, guid: 1479893223beaf94490a7243bffa8a45, type: 3}
     - target: {fileID: 2462585802389066436, guid: c81f2a54982a05e41a9c3297bbf2a13f, type: 3}
       propertyPath: _maxTimerChangeSprite
       value: 0.2
@@ -21188,6 +21544,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1393734646}
     m_Modifications:
+    - target: {fileID: 1933512110333617217, guid: c81f2a54982a05e41a9c3297bbf2a13f, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 4b84d4a6ea5345b49863b064a41a5f11, type: 3}
     - target: {fileID: 2462585802389066436, guid: c81f2a54982a05e41a9c3297bbf2a13f, type: 3}
       propertyPath: _score
       value: 
@@ -21200,6 +21560,14 @@ PrefabInstance:
       propertyPath: _thisGO
       value: 
       objectReference: {fileID: 1828869654}
+    - target: {fileID: 2462585802389066436, guid: c81f2a54982a05e41a9c3297bbf2a13f, type: 3}
+      propertyPath: _scoreGiven
+      value: 200
+      objectReference: {fileID: 0}
+    - target: {fileID: 2462585802389066436, guid: c81f2a54982a05e41a9c3297bbf2a13f, type: 3}
+      propertyPath: _spriteWhenTouched
+      value: 
+      objectReference: {fileID: 21300000, guid: 0204ed82eca6f25488a9d3fcf8da45cb, type: 3}
     - target: {fileID: 2462585802389066436, guid: c81f2a54982a05e41a9c3297bbf2a13f, type: 3}
       propertyPath: _maxTimerChangeSprite
       value: 0.2
@@ -22339,6 +22707,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2040976627}
     m_Modifications:
+    - target: {fileID: 1933512110333617217, guid: c81f2a54982a05e41a9c3297bbf2a13f, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 248897d84f723ae4dbfc09b116784758, type: 3}
     - target: {fileID: 2462585802389066436, guid: c81f2a54982a05e41a9c3297bbf2a13f, type: 3}
       propertyPath: _score
       value: 
@@ -22351,6 +22723,14 @@ PrefabInstance:
       propertyPath: _thisGO
       value: 
       objectReference: {fileID: 1930060630}
+    - target: {fileID: 2462585802389066436, guid: c81f2a54982a05e41a9c3297bbf2a13f, type: 3}
+      propertyPath: _scoreGiven
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 2462585802389066436, guid: c81f2a54982a05e41a9c3297bbf2a13f, type: 3}
+      propertyPath: _spriteWhenTouched
+      value: 
+      objectReference: {fileID: 21300000, guid: 1479893223beaf94490a7243bffa8a45, type: 3}
     - target: {fileID: 2462585802389066436, guid: c81f2a54982a05e41a9c3297bbf2a13f, type: 3}
       propertyPath: _maxTimerChangeSprite
       value: 0.2
@@ -24128,6 +24508,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 476478521}
     m_Modifications:
+    - target: {fileID: 1933512110333617217, guid: c81f2a54982a05e41a9c3297bbf2a13f, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 248897d84f723ae4dbfc09b116784758, type: 3}
     - target: {fileID: 2462585802389066436, guid: c81f2a54982a05e41a9c3297bbf2a13f, type: 3}
       propertyPath: _score
       value: 
@@ -24140,6 +24524,14 @@ PrefabInstance:
       propertyPath: _thisGO
       value: 
       objectReference: {fileID: 2074923737}
+    - target: {fileID: 2462585802389066436, guid: c81f2a54982a05e41a9c3297bbf2a13f, type: 3}
+      propertyPath: _scoreGiven
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 2462585802389066436, guid: c81f2a54982a05e41a9c3297bbf2a13f, type: 3}
+      propertyPath: _spriteWhenTouched
+      value: 
+      objectReference: {fileID: 21300000, guid: 1479893223beaf94490a7243bffa8a45, type: 3}
     - target: {fileID: 2462585802389066436, guid: c81f2a54982a05e41a9c3297bbf2a13f, type: 3}
       propertyPath: _maxTimerChangeSprite
       value: 0.2
@@ -24201,6 +24593,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1393734646}
     m_Modifications:
+    - target: {fileID: 1933512110333617217, guid: c81f2a54982a05e41a9c3297bbf2a13f, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 4b84d4a6ea5345b49863b064a41a5f11, type: 3}
     - target: {fileID: 2462585802389066436, guid: c81f2a54982a05e41a9c3297bbf2a13f, type: 3}
       propertyPath: _score
       value: 
@@ -24213,6 +24609,14 @@ PrefabInstance:
       propertyPath: _thisGO
       value: 
       objectReference: {fileID: 2086609090}
+    - target: {fileID: 2462585802389066436, guid: c81f2a54982a05e41a9c3297bbf2a13f, type: 3}
+      propertyPath: _scoreGiven
+      value: 200
+      objectReference: {fileID: 0}
+    - target: {fileID: 2462585802389066436, guid: c81f2a54982a05e41a9c3297bbf2a13f, type: 3}
+      propertyPath: _spriteWhenTouched
+      value: 
+      objectReference: {fileID: 21300000, guid: 0204ed82eca6f25488a9d3fcf8da45cb, type: 3}
     - target: {fileID: 2462585802389066436, guid: c81f2a54982a05e41a9c3297bbf2a13f, type: 3}
       propertyPath: _maxTimerChangeSprite
       value: 0.2
