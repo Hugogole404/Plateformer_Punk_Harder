@@ -8,6 +8,7 @@ public class Score : MonoBehaviour
 {
     [SerializeField] private AudioSource AudioSourceBumpers;
     [SerializeField] private TextMeshProUGUI _textScore;
+    public int DeathCount;
 
     [Header("Bumpers")]
     private int _actualScore;

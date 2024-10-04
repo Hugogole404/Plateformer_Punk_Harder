@@ -6,7 +6,6 @@ public class DeathZone : MonoBehaviour
 {
     [SerializeField] Camera _mainCamera;
     [SerializeField] Score _score;
-    [SerializeField] private TimeScript _timeScript;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -22,6 +21,6 @@ public class DeathZone : MonoBehaviour
     }
     private void DeathCounterAdd()
     {
-        _timeScript.DeathCount +=1;
+        _score.DeathCount +=1;
     }
 }
