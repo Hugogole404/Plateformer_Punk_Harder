@@ -145,4 +145,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _saveSplineSpeed: 0
   _timer: 0
+  _activatedSprite: {fileID: 0}
   _mainCamera: {fileID: 0}
